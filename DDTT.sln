@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDTT.ClassLib", "DDTT.UI_Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess.ClassLib", "DataAccess.ClassLib\DataAccess.ClassLib.csproj", "{D176745A-DB48-4E89-A3AA-78759E69F410}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "DDTT_SqlProj", "DDTT_SqlProj\DDTT_SqlProj.sqlproj", "{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,12 @@ Global
 		{D176745A-DB48-4E89-A3AA-78759E69F410}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D176745A-DB48-4E89-A3AA-78759E69F410}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D176745A-DB48-4E89-A3AA-78759E69F410}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5526D2-D472-4B2C-894C-B52D3EBCCF43}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

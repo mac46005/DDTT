@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DDTT.ClassLib.Models.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,8 @@ namespace DDTT.ClassLib.Models.BusinessModels
 {
     public class Income
     {
-
+        public int Id { get; set; }
+        public DD_Pay DD_Pay { get; set; }
+        public Tip Tip { get; set; }
     }
 }
