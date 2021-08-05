@@ -11,6 +11,11 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
     /// </summary>
     public class F1040_ES
     {
+        //Your net profit from self employment is found on schedule C (Form 1040), line 31;
+        //Schedule F (Form 1040), line 34;
+        //and Schedule K 1 (Form 1065), box 14, Code A.
+
+
         /// <summary>
         /// Line 1a
         /// </summary>
@@ -42,6 +47,9 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
                     return value; 
                 }
             } }
+        private decimal line8 { get => (line3 > line7) ? line7 : line3; }
+        private decimal line9 { get => line8 * 0.124M; }
+        private decimal line10 { get => line4 + line9; }
 
         
 

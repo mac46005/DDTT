@@ -47,6 +47,8 @@
     <Compile Include="Models\BusinessModels\Tip.cs" />
     <Compile Include="Models\Interfaces\IMoneyHandler.cs" />
     <Compile Include="Models\TaxModels\F1040_ES.cs" />
+    <Compile Include="Models\TaxModels\TaxRateSceduleHelper.cs" />
+    <Compile Include="Models\TaxModels\TaxRateScedule_Single.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
