@@ -54,15 +54,23 @@ namespace DDTT.ClassLib.Models.TaxModels
         private decimal line10 { get => line4 + line9; }
         public decimal GetExpectedTaxAmount()
         {
+            decimal amountToPay = 0;
             switch (MyFilingStatus)
             {
                 case FilingStatuses.Single:
-                    return new TaxRateScedule_Single().TaxAmount(line3);
+                    amountToPay = new TaxRateScedule_Single().TaxAmount(line3);
+                    break;
                 case FilingStatuses.HofH:
-
+                    amountToPay = new TaxRateSchedule_HofH().TaxAmount(line3);
+                    break;
                 case FilingStatuses.MFillingJ_Widower:
+                    amountToPay = new TaxRateSchedule_MJointly_Widow().TaxAmount(line3);
+                    break;
                 case FilingStatuses.MFillingS:
+                    amountToPay = new TaxRateSchedule_MSeparately().TaxAmount(line3);
+                    break;
             }
+            return amountToPay;
         }
         
 
