@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
+namespace DDTT.ClassLib.Models.TaxModels
 {
     /// <summary>
     /// 2021 Self Employment Tax and Deduction Worksheet Estimated Tax Worksheet

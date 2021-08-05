@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="Models\BusinessModels\DD_Pay.cs" />
     <Compile Include="Models\BusinessModels\Expenditure.cs" />
+    <Compile Include="Models\BusinessModels\ExpenseType.cs" />
     <Compile Include="Models\BusinessModels\Income.cs" />
     <Compile Include="Models\BusinessModels\Mileage.cs" />
     <Compile Include="Models\BusinessModels\Tip.cs" />

@@ -1,12 +1,12 @@
-﻿using DDTT.UI_Commands.ClassLib.Models.Interfaces;
+﻿using DDTT.ClassLib.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DDTT.UI_Commands.ClassLib.Models.TaxModels.TaxRateScheduleHelper;
+using static DDTT.ClassLib.Models.TaxModels.TaxRateScheduleHelper;
 
-namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
+namespace DDTT.ClassLib.Models.TaxModels
 {
     /// <summary>
     /// 2021 Tax Rate Scedule 

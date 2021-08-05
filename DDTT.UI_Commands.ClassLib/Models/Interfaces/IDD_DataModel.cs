@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDTT.UI_Commands.ClassLib.Models.Interfaces
+namespace DDTT.ClassLib.Models.Interfaces
 {
     internal interface IDD_DataModel
     {

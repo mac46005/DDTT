@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DDTT.ClassLib.Models.BusinessModels
 {
-    public class Income
+    public class ExpenseType
     {
-
+        public int Id { get; set; }
+        public string CategoryName { get; set; }
     }
 }

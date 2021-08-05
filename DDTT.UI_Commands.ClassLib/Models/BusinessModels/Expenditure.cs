@@ -1,11 +1,11 @@
-﻿using DDTT.UI_Commands.ClassLib.Models.Interfaces;
+﻿using DDTT.ClassLib.Models.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DDTT.UI_Commands.ClassLib.Models.BusinessModels
+namespace DDTT.ClassLib.Models.BusinessModels
 {
     public class Expenditure : IDD_DataModel
     {
@@ -15,5 +15,7 @@ namespace DDTT.UI_Commands.ClassLib.Models.BusinessModels
         /// </summary>
         public decimal Amount { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
+        public ExpenseType ExpenseType { get; set; }
+        public int Note { get; set; }
     }
 }
