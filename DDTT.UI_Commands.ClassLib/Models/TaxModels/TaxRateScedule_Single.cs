@@ -14,7 +14,6 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
     /// 
     internal class TaxRateScedule_Single
     {
-        public FilingStatuses MyFilingStatus { get; set; }
 
         private decimal[] compareToLine3 = 
             {0,9950,40525,86375,164925,209425,523600};

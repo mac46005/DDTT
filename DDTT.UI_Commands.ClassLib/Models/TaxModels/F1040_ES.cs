@@ -16,6 +16,8 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
         //and Schedule K 1 (Form 1065), box 14, Code A.
 
 
+        public FilingStatuses MyFilingStatus { get; set; }
+
         /// <summary>
         /// Line 1a
         /// </summary>
