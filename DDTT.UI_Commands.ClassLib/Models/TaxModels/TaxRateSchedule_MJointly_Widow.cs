@@ -8,13 +8,21 @@ using static DDTT.UI_Commands.ClassLib.Models.TaxModels.TaxRateScheduleHelper;
 
 namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
 {
+    /// <summary>
+    /// 2021 Tax Rate Scedule 
+    /// Filling Status: Married filing jointly / widower
+    /// </summary>
     internal class TaxRateSchedule_MJointly_Widow : ICalculateTaxRate
     {
         private decimal[] compareToLine3 =
         {
             0,1990,9328,29502,67206,95686,168993.50M
         };
-
+        /// <summary>
+        /// Takes in line 3 from form 1040 es and calculates the amount of tax to pay depending on filing status
+        /// </summary>
+        /// <param name="line3"></param>
+        /// <returns></returns>
         public decimal TaxAmount(decimal line3)
         {
             decimal amount = 0;

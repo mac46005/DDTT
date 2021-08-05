@@ -18,6 +18,11 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
         {
             0,14200,54200,86350,164900,209400,523600
         };
+        /// <summary>
+        /// Takes in line 3 from form 1040 es and calculates the amount of tax to pay depending on filing status
+        /// </summary>
+        /// <param name="line3"></param>
+        /// <returns></returns>
         public decimal TaxAmount(decimal line3)
         {
             decimal amount = 0;

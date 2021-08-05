@@ -7,10 +7,13 @@ using System.Threading.Tasks;
 
 namespace DDTT.UI_Commands.ClassLib.Models.BusinessModels
 {
-    public class Expenditure : IMoneyHandler
+    public class Expenditure : IDD_DataModel
     {
         public int Id { get; set; }
+        /// <summary>
+        /// Get and set the expense amount
+        /// </summary>
         public decimal Amount { get; set; }
-        public DateTime TimeStamp { get; set; }
+        public DateTime TimeStamp { get; set; } = DateTime.Now;
     }
 }
