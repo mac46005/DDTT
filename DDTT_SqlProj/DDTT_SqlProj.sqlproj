@@ -74,5 +74,6 @@
     <Build Include="dbo\Stored Procedure\spDDPay_GetAll.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_Insert.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_GetById.sql" />
+    <Build Include="dbo\Stored Procedure\spExpenditure_GetAll.sql" />
   </ItemGroup>
 </Project>
