@@ -11,8 +11,11 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
     /// 2021 Tax Rate Scedule 
     /// Filling Status: SINGLE
     /// </summary>
+    /// 
     internal class TaxRateScedule_Single
     {
+        public FilingStatuses MyFilingStatus { get; set; }
+
         private decimal[] compareToLine3 = 
             {0,9950,40525,86375,164925,209425,523600};
         public decimal TaxAmount(decimal line3)
