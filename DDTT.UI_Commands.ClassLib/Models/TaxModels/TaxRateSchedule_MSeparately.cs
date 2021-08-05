@@ -8,43 +8,42 @@ using static DDTT.UI_Commands.ClassLib.Models.TaxModels.TaxRateScheduleHelper;
 
 namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
 {
-    internal class TaxRateSchedule_MJointly_Widow : ICalculateTaxRate
+    class TaxRateSchedule_MSeparately : ICalculateTaxRate
     {
         private decimal[] compareToLine3 =
         {
-            0,1990,9328,29502,67206,95686,168993.50M
+            0,995,4664,14751,33603,47843,84496.75M
         };
-
         public decimal TaxAmount(decimal line3)
         {
             decimal amount = 0;
             if (line3 >= compareToLine3[0] || line3 <= compareToLine3[1])
             {
-                amount = CalculateTaxAmount(0,0.10M);
+                amount = CalculateTaxAmount(0, 0.10M);
             }
             else if (line3 >= compareToLine3[1] || line3 <= compareToLine3[2])
             {
-                amount = CalculateTaxAmount(1990, 0.12M);
+                amount = CalculateTaxAmount(995, 0.12M);
             }
             else if (line3 >= compareToLine3[2] || line3 <= compareToLine3[3])
             {
-                amount = CalculateTaxAmount(9328, 0.22M);
+                amount = CalculateTaxAmount(4664, 0.22M);
             }
             else if (line3 >= compareToLine3[3] || line3 <= compareToLine3[4])
             {
-                amount = CalculateTaxAmount(29502, 0.24M);
+                amount = CalculateTaxAmount(14751, 0.24M);
             }
             else if (line3 >= compareToLine3[4] || line3 <= compareToLine3[5])
             {
-                amount = CalculateTaxAmount(67206, 0.32M);
+                amount = CalculateTaxAmount(33603, 0.32M);
             }
             else if (line3 >= compareToLine3[5] || line3 <= compareToLine3[6])
             {
-                amount = CalculateTaxAmount(95686, 0.35M);
+                amount = CalculateTaxAmount(47843, 0.35M);
             }
             else if (line3 >= compareToLine3[6])
             {
-                amount = CalculateTaxAmount(168993.50M, 0.37M);
+                amount = CalculateTaxAmount(84496.75M, 0.37M);
             }
             return amount;
         }

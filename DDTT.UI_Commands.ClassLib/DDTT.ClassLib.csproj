@@ -53,6 +53,7 @@
     <Compile Include="Models\TaxModels\TaxRateScedule_Single.cs" />
     <Compile Include="Models\TaxModels\TaxRateSchedule_HofH.cs" />
     <Compile Include="Models\TaxModels\TaxRateSchedule_MJointly_Widow.cs" />
+    <Compile Include="Models\TaxModels\TaxRateSchedule_MSeparately.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
