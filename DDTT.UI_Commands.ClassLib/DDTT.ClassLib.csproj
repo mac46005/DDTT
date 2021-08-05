@@ -48,8 +48,9 @@
     <Compile Include="Models\Interfaces\IMoneyHandler.cs" />
     <Compile Include="Models\TaxModels\F1040_ES.cs" />
     <Compile Include="Models\TaxModels\FillingStatus.cs" />
-    <Compile Include="Models\TaxModels\TaxRateSceduleHelper.cs" />
+    <Compile Include="Models\TaxModels\TaxRateScheduleHelper.cs" />
     <Compile Include="Models\TaxModels\TaxRateScedule_Single.cs" />
+    <Compile Include="Models\TaxModels\TaxRateSchedule_HofH.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

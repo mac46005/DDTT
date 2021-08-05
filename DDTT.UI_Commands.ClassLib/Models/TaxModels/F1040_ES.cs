@@ -52,7 +52,18 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
         private decimal line8 { get => (line3 > line7) ? line7 : line3; }
         private decimal line9 { get => line8 * 0.124M; }
         private decimal line10 { get => line4 + line9; }
+        public decimal GetExpectedTaxAmount()
+        {
+            switch (MyFilingStatus)
+            {
+                case FilingStatuses.Single:
+                    return new TaxRateScedule_Single().TaxAmount(line3);
+                case FilingStatuses.HofH:
 
+                case FilingStatuses.MFillingJ_Widower:
+                case FilingStatuses.MFillingS:
+            }
+        }
         
 
     }

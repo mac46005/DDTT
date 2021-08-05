@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
 {
-    internal class TaxRateSceduleHelper
+    internal class TaxRateScheduleHelper
     {
         internal static decimal CalculateTaxAmount(decimal amount,decimal percent)
         {

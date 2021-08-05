@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static DDTT.UI_Commands.ClassLib.Models.TaxModels.TaxRateSceduleHelper;
+using static DDTT.UI_Commands.ClassLib.Models.TaxModels.TaxRateScheduleHelper;
 
 namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
 {
