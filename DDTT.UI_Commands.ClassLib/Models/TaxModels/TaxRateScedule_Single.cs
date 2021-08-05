@@ -11,7 +11,6 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
     /// 2021 Tax Rate Scedule 
     /// Filling Status: SINGLE
     /// </summary>
-    /// 
     internal class TaxRateScedule_Single
     {
 
