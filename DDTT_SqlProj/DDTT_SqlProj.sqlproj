@@ -70,5 +70,6 @@
     <Build Include="dbo\Tables\DD_Pays.sql" />
     <Build Include="dbo\Tables\Incomes.sql" />
     <Build Include="dbo\Tables\Mileages.sql" />
+    <Build Include="dbo\Tables\Tips.sql" />
   </ItemGroup>
 </Project>
