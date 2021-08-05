@@ -84,5 +84,6 @@
     <Build Include="dbo\Stored Procedure\spMileage_Insert.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_GetById.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_GetAll.sql" />
+    <Build Include="dbo\Stored Procedure\spTip_Insert.sql" />
   </ItemGroup>
 </Project>
