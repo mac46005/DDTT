@@ -71,5 +71,6 @@
     <Build Include="dbo\Tables\Incomes.sql" />
     <Build Include="dbo\Tables\Mileages.sql" />
     <Build Include="dbo\Tables\Tips.sql" />
+    <Build Include="dbo\Stored Procedure\spDDPay_Insert.sql" />
   </ItemGroup>
 </Project>
