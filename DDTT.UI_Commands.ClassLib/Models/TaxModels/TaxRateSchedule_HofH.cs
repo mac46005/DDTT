@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DDTT.UI_Commands.ClassLib.Models.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +12,7 @@ namespace DDTT.UI_Commands.ClassLib.Models.TaxModels
     /// 2021 Tax Rate Scedule 
     /// Filling Status: HEAD of HOUSEHOLD
     /// </summary>
-    internal class TaxRateSchedule_HofH
+    internal class TaxRateSchedule_HofH : ICalculateTaxRate
     {
         private decimal[] compareToLine3 =
         {

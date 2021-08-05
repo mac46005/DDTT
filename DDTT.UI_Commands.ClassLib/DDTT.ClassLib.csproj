@@ -45,12 +45,14 @@
     <Compile Include="Models\BusinessModels\Expenditure.cs" />
     <Compile Include="Models\BusinessModels\Income.cs" />
     <Compile Include="Models\BusinessModels\Tip.cs" />
+    <Compile Include="Models\Interfaces\ICalculateTaxRate.cs" />
     <Compile Include="Models\Interfaces\IMoneyHandler.cs" />
     <Compile Include="Models\TaxModels\F1040_ES.cs" />
     <Compile Include="Models\TaxModels\FillingStatus.cs" />
     <Compile Include="Models\TaxModels\TaxRateScheduleHelper.cs" />
     <Compile Include="Models\TaxModels\TaxRateScedule_Single.cs" />
     <Compile Include="Models\TaxModels\TaxRateSchedule_HofH.cs" />
+    <Compile Include="Models\TaxModels\TaxRateSchedule_MJointly_Widow.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
