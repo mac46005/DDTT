@@ -78,5 +78,6 @@
     <Build Include="dbo\Stored Procedure\spExpenseType_Insert.sql" />
     <Build Include="dbo\Stored Procedure\spExpenseType_GetById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenseType_GetAll.sql" />
+    <Build Include="dbo\Stored Procedure\spIncome_Insert.sql" />
   </ItemGroup>
 </Project>
