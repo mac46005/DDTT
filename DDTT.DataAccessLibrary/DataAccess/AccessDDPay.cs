@@ -20,9 +20,9 @@ namespace DDTT.DataAccessLibrary.DataAccess
         }
         public DD_Pay GetById(int id)
         {
-            using (ILoadSingleData cnn = new )
+            using (ILoadSingleData cnn = new BasicSqlDataAccess())
             {
-
+                return cnn.LoadSingleData<DD_Pay, dynamic>("dbo.spDDPay_GetById", "", new { Id = id });
             }
         }
     }
