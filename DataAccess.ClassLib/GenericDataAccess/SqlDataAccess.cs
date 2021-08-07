@@ -7,31 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Dapper;
+using DataAccess.ClassLib.Interface;
 
 namespace DataAccess.ClassLib.GenericDataAccess
 {
-    public class SqlDataAccess
+    public class SqlDataAccess 
     {
-        public string GetConnectionString(string name)
-        {
-            return ConfigurationManager.ConnectionStrings[name]
-                .ConnectionString;
-        }
-        public List<T>LoadData<T,U>(string storedProcedure,U parameters,string connectionStringName)
-        {
-            string connectionString = GetConnectionString(connectionStringName);
-            using(IDbConnection dbConnection = new SqlConnection(connectionString))
-            {
-                return dbConnection.Query<T>(storedProcedure, parameters, commandType: CommandType.StoredProcedure).ToList();
-            }
-        }
-        public void SaveData<T>(string storedProcedure,T obj,string connectionStringName)
-        {
-            string connectionString = GetConnectionString(connectionStringName);
-            using (IDbConnection dbConnection = new SqlConnection(connectionString))
-            {
-                dbConnection.Query<T>(storedProcedure, obj, commandType: CommandType.StoredProcedure);
-            }
-        }
     }
 }

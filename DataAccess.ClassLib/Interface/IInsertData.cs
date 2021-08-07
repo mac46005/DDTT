@@ -8,6 +8,6 @@ namespace DataAccess.ClassLib.Interface
 {
     public interface IInsertData
     { 
-        void SaveData<T>(string storedProcedure, T obj, string connectionStringName);
+        void SaveData<T>(string storedProcedure, string connectionStringName,T obj);
     }
 }

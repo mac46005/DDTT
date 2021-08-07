@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ClassLib.Interface
 {
-    public interface ISelectMultipleSet
+    public interface IMapMultipleObjects
     {
-        List<T> MultipleSet<T,U>(string storedProcedure,string connectionStringName,U parameters);
+        List<T> MapMultipleObjects<T, U, V>(string storedProcedure,string connectionStringName,Func<U,V,T> map);
     }
 }

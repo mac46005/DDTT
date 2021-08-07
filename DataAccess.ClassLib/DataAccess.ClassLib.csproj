@@ -65,9 +65,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GenericDataAccess\SqlDataAccess.cs" />
+    <Compile Include="Interface\IGetConnectionString.cs" />
     <Compile Include="Interface\ILoadSetData.cs" />
     <Compile Include="Interface\ILoadSingleData.cs" />
     <Compile Include="Interface\IInsertData.cs" />
+    <Compile Include="Interface\IMapMultipleObjects.cs" />
     <Compile Include="Interface\ISelectMultipleSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

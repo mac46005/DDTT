@@ -15,5 +15,6 @@ namespace DDTT.ClassLib.Models.BusinessModels
         /// </summary>
         public decimal Amount { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
+        public int TipId { get; set; }
     }
 }

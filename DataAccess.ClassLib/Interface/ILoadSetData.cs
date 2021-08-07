@@ -8,6 +8,6 @@ namespace DataAccess.ClassLib.Interface
 {
     interface ILoadSetData
     {
-        List<T> LoadSetData<T, U>(string storedProcedure, U parameters, string connectionStringName);
+        List<T> LoadSetData<T, U>(string storedProcedure, string connectionStringName,U parameters);
     }
 }

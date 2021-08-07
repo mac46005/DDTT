@@ -2,5 +2,6 @@
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
     [Amount] MONEY NOT NULL, 
-    [TimeStamp] DATETIME2 NOT NULL
+    [TimeStamp] DATETIME2 NOT NULL, 
+    [TipId] INT NULL
 )

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ClassLib.Interface
 {
-    public interface ISelectMultipleSet
+    public interface IGetConnectionString
     {
-        List<T> MultipleSet<T,U>(string storedProcedure,string connectionStringName,U parameters);
+        string GetConnectionString(string name);
     }
 }

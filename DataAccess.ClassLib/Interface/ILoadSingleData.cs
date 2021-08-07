@@ -8,6 +8,6 @@ namespace DataAccess.ClassLib.Interface
 {
     interface ILoadSingleData
     {
-        T LoadData<T, U>(string storedProcedure,U parameters,string connectionStringName);
+        T LoadData<T, U>(string storedProcedure,string connectionStringName,U parameters);
     }
 }
