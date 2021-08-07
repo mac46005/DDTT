@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataAccess.ClassLib.Interface
+namespace DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces
 {
     interface ILoadSingleData
     {
-        T LoadData<T, U>(string storedProcedure,string connectionStringName,U parameters);
+        T LoadData<T, U>(string storedProcedure, string connectionStringName, U parameters);
     }
 }

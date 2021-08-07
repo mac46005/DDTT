@@ -64,13 +64,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="GenericDataAccess\SqlDataAccess.cs" />
+    <Compile Include="GenericDataAccess\BasicSqlDataAccess.cs" />
     <Compile Include="Interface\IGetConnectionString.cs" />
-    <Compile Include="Interface\ILoadSetData.cs" />
-    <Compile Include="Interface\ILoadSingleData.cs" />
-    <Compile Include="Interface\IInsertData.cs" />
-    <Compile Include="Interface\IMapMultipleObjects.cs" />
-    <Compile Include="Interface\ISelectMultipleSet.cs" />
+    <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSetData.cs" />
+    <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSingleData.cs" />
+    <Compile Include="Interface\BasicDataAccess_Interfaces\IInsertData.cs" />
+    <Compile Include="Interface\MapMultipleObject_Interfaces\IMapThreeObjects.cs" />
+    <Compile Include="Interface\MapMultipleObject_Interfaces\IMapTwoObjects.cs" />
+    <Compile Include="Interface\SelectMultipleSet_Interfaces\ISelectMultipleSet.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
