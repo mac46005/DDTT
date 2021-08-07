@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ClassLib.Interface.MapMultipleObject_Interfaces
 {
-    public interface IMapThreeObjects
+    public interface IMapThreeObjects : IDisposable
     {
         T MapThreeObjects<T, U, V, W, X>(string storedProcedure, string connectionStringName, Func<U, V, W, T> map, X parameters);
     }

@@ -12,20 +12,23 @@ using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 
 namespace DataAccess.ClassLib.GenericDataAccess
 {
-    public class BasicSqlDataAccess : IInsertData, ILoadSetData, IGetConnectionString
+    public class BasicSqlDataAccess : IInsertData, ILoadSetData
     {
-        public string GetConnectionString(string name)
-        {
-            return ConfigurationManager.ConnectionStrings[name].ConnectionString;
-        }
 
         public List<T> LoadSetData<T, U>(string storedProcedure, string connectionStringName, U parameters)
         {
+            using (IDbConnection cnn = new SqlConnection(DataString.GetConnectionString(connectionStringName)))
+            {
+                return cnn.Query<T>(storedProcedure, parameters, commandType: CommandType.StoredProcedure).ToList();
+            }
         }
 
         public void SaveData<T>(string storedProcedure, string connectionStringName, T obj)
         {
-            throw new NotImplementedException();
+            using (IDbConnection cnn = new SqlConnection(DataString.GetConnectionString(connectionStringName)))
+            {
+                cnn.Query<T>(storedProcedure,obj,commandType: CommandType.StoredProcedure);
+            }
         }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ClassLib.Interface.MapMultipleObject_Interfaces
 {
-    public interface IMapTwoObjects
+    public interface IMapTwoObjects : IDisposable
     {
-        List<T> MapMultipleObjects<T, U, V, W>(string storedProcedure, string connectionStringName, Func<U, V, T> map,W parameters);
+        List<T> MapTwoObjects<T, U, V, W>(string storedProcedure, string connectionStringName, Func<U, V, T> map,W parameters);
     }
 }

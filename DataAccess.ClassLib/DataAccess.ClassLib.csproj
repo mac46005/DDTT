@@ -64,8 +64,9 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataString.cs" />
     <Compile Include="GenericDataAccess\BasicSqlDataAccess.cs" />
-    <Compile Include="Interface\IGetConnectionString.cs" />
+    <Compile Include="GenericDataAccess\MapMultiObjects.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSetData.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSingleData.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\IInsertData.cs" />
