@@ -12,7 +12,7 @@ using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 
 namespace DataAccess.ClassLib.GenericDataAccess
 {
-    public class BasicSqlDataAccess : ISavetData, ILoadSetData, ILoadSingleData
+    public class BasicSqlDataAccess : ISaveSingleData, ILoadSetData, ILoadSingleData
     {
         public void Dispose()
         {

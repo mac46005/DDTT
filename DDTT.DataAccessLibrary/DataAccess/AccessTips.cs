@@ -18,5 +18,19 @@ namespace DDTT.DataAccessLibrary.DataAccess
                 return cnn.LoadSingleData<Tip,dynamic>("dbo.spTip_GetById", "", new { Id = id });
             }
         }
+        public List<Tip> GetAll()
+        {
+            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            {
+                return cnn.LoadSetData<Tip, dynamic>("dbo.spTip_GetAll", "", new { });
+            }
+        }
+        public void DeleteById(int id)
+        {
+            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            {
+                cnn.LoadSetData<Tip, dynamic>("dbo.spTip_DeleteById", "", new { Id = id });
+            }
+        }
     }
 }

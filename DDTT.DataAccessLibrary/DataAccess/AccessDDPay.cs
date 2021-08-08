@@ -27,7 +27,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         }
         public void DeleteById(int id)
         {
-            using (ISavetData cnn = new BasicSqlDataAccess())
+            using (ISaveSingleData cnn = new BasicSqlDataAccess())
             {
                 cnn.SaveData<dynamic>("dbo.spDDPay_DeleteById", "", new { Id = id });
             }
