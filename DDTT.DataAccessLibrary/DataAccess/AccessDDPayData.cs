@@ -9,7 +9,7 @@ using DataAccess.ClassLib.GenericDataAccess;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class AccessDDPay
+    public class AccessDDPayData
     {
         public List<DD_Pay> GetAll()
         {

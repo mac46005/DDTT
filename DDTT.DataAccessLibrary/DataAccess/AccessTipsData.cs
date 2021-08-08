@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class AccessTips
+    public class AccessTipsData
     {
         public Tip GetById(int id)
         {
