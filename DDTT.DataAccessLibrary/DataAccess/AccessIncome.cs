@@ -13,7 +13,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
     {
         public List<Income> GetAllIncomes()
         {
-            using (IMapTwoObjects mapTwoObjects = new MapMultiObjects())
+            using (IMapTwoObjects mapTwoObjects = new SqlDataAccess())
             {
                 return mapTwoObjects.MapTwoObjects<Income, DD_Pay, Tip, dynamic>("dbo.spIncome_GetAll", "", (pay, tip) => { return new Income { DD_Pay = pay, Tip = tip }; }, null);
             }

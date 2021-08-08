@@ -4,5 +4,5 @@ AS
 BEGIN
 	SET NOCOUNT ON;
 	DELETE FROM dbo.DD_Pays
-	WHERE Id = @id;
+	WHERE Id = @Id;
 END

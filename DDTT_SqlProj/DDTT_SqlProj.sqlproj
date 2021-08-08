@@ -89,5 +89,6 @@
     <Build Include="dbo\Stored Procedure\spTip_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_DeleteById.sql" />
+    <Build Include="dbo\Stored Procedure\spExpenseType_DeleteById.sql" />
   </ItemGroup>
 </Project>

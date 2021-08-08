@@ -8,6 +8,6 @@ namespace DataAccess.ClassLib.Interface.MapMultipleObject_Interfaces
 {
     public interface IMapThreeObjects : IDisposable
     {
-        T MapThreeObjects<T, U, V, W, X>(string storedProcedure, string connectionStringName, Func<U, V, W, T> map, X parameters);
+        List<T> MapThreeObjects<T, U, V, W, X>(string storedProcedure, string connectionStringName, Func<U, V, W, T> map, X parameters);
     }
 }
