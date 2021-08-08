@@ -87,5 +87,6 @@
     <Build Include="dbo\Stored Procedure\spIncome_GetAll.sql" />
     <Build Include="dbo\Stored Procedure\spDDPay_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spTip_DeleteById.sql" />
+    <Build Include="dbo\Stored Procedure\spMileage_DeleteById.sql" />
   </ItemGroup>
 </Project>
