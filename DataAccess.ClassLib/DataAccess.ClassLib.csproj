@@ -65,7 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataString.cs" />
-    <Compile Include="GenericDataAccess\BasicSqlDataAccess.cs" />
+    <Compile Include="GenericDataAccess\SqlDataAccess.cs" />
     <Compile Include="GenericDataAccess\MapMultiObjects.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSetData.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSingleData.cs" />

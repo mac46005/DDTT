@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\AccessDDPayData.cs" />
+    <Compile Include="DataAccess\AccessExpenseData.cs" />
     <Compile Include="DataAccess\AccessIncome.cs" />
     <Compile Include="DataAccess\AccessMileageData.cs" />
     <Compile Include="DataAccess\AccessTipsData.cs" />

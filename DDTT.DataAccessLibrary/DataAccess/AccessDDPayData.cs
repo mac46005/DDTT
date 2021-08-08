@@ -13,21 +13,21 @@ namespace DDTT.DataAccessLibrary.DataAccess
     {
         public List<DD_Pay> GetAll()
         {
-            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            using (ILoadSetData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSetData<DD_Pay, dynamic>("dbo.spDDPay_GetAll", "", new { }).ToList();
             }
         }
         public DD_Pay GetById(int id)
         {
-            using (ILoadSingleData cnn = new BasicSqlDataAccess())
+            using (ILoadSingleData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSingleData<DD_Pay, dynamic>("dbo.spDDPay_GetById", "", new { Id = id });
             }
         }
         public void DeleteById(int id)
         {
-            using (ISaveSingleData cnn = new BasicSqlDataAccess())
+            using (ISaveSingleData cnn = new SqlDataAccess())
             {
                 cnn.SaveData<dynamic>("dbo.spDDPay_DeleteById", "", new { Id = id });
             }

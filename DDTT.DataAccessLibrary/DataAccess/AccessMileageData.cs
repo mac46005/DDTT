@@ -13,23 +13,23 @@ namespace DDTT.DataAccessLibrary.DataAccess
     {
         public Mileage GetById(int id)
         {
-            using (ILoadSingleData cnn = new BasicSqlDataAccess())
+            using (ILoadSingleData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSingleData<Mileage, dynamic>("dbo.spMileage_GetById", "", new { Id = id });
             }
         }
         public List<Mileage> GetAll()
         {
-            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            using (ILoadSetData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSetData<Mileage, dynamic>("dbo.spMileage_GetAll", "", new { });
             }
         }
         public void DeleteById(int id)
         {
-            using(ISaveSingleData cnn = new BasicSqlDataAccess())
+            using(ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>("dbo.spMileage_DeleteById", "",);
+                cnn.SaveData<dynamic>("dbo.spMileage_DeleteById", "",new { Id = id });
             }
         }
     }

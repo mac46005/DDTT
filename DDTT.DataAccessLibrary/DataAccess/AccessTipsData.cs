@@ -13,21 +13,21 @@ namespace DDTT.DataAccessLibrary.DataAccess
     {
         public Tip GetById(int id)
         {
-            using (ILoadSingleData cnn = new BasicSqlDataAccess())
+            using (ILoadSingleData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSingleData<Tip,dynamic>("dbo.spTip_GetById", "", new { Id = id });
             }
         }
         public List<Tip> GetAll()
         {
-            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            using (ILoadSetData cnn = new SqlDataAccess())
             {
                 return cnn.LoadSetData<Tip, dynamic>("dbo.spTip_GetAll", "", new { });
             }
         }
         public void DeleteById(int id)
         {
-            using (ILoadSetData cnn = new BasicSqlDataAccess())
+            using (ILoadSetData cnn = new SqlDataAccess())
             {
                 cnn.LoadSetData<Tip, dynamic>("dbo.spTip_DeleteById", "", new { Id = id });
             }
