@@ -18,5 +18,12 @@ namespace DDTT.DataAccessLibrary.DataAccess
                 return cnn.LoadSingleData<Expenditure, dynamic>("spExpenditure_GetById", "", new { Id = id });
             }
         }
+        public List<Expenditure> GetAll()
+        {
+            using (ILoadSetData cnn = new SqlDataAccess())
+            {
+                return cnn.LoadSetData<Expenditure, dynamic>("dbo.Expenditure_GetAll", "", new { });
+            }
+        }
     }
 }
