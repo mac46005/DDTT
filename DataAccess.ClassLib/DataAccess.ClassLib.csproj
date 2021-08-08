@@ -72,6 +72,7 @@
     <Compile Include="Interface\MapMultipleObject_Interfaces\IMapThreeObjects.cs" />
     <Compile Include="Interface\MapMultipleObject_Interfaces\IMapTwoObjects.cs" />
     <Compile Include="Interface\SelectMultipleSet_Interfaces\ISelectMultipleSet.cs" />
+    <Compile Include="Interface\Transaction_Interfaces\IRunTransaction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,13 +10,14 @@ using Dapper;
 using DataAccess.ClassLib.Interface;
 using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 using DataAccess.ClassLib.Interface.MapMultipleObject_Interfaces;
+using DataAccess.ClassLib.Interface.Transaction_Interfaces;
 
 namespace DataAccess.ClassLib.GenericDataAccess
 {
     public class SqlDataAccess : 
         ISaveSingleData, ILoadSetData, 
         ILoadSingleData,IMapTwoObjects,
-        IMapThreeObjects
+        IMapThreeObjects, IRunTransaction
     {
         public void Dispose()
         {
@@ -60,6 +61,29 @@ namespace DataAccess.ClassLib.GenericDataAccess
             using (IDbConnection cnn = new SqlConnection(DataString.GetConnectionString(connectionStringName)))
             {
                 return cnn.Query<U, V, W, T>(storedProcedure, map, parameters).ToList();
+            }
+        }
+
+        //Open connect/Start transaction method
+        //load using the transaction
+        //save using the transaction
+        //close connection/stop transaction method
+        //dispose
+
+        private IDbConnection _connection;
+        private IDbTransaction _transaction;
+        public void StartTransaction(string connectionStringName)
+        {
+            _connection = new SqlConnection(DataString.GetConnectionString(connectionStringName));
+
+            _transaction = _connection.BeginTransaction();
+        }
+        public void RunTransaction<T, U, V, X>(T obj1, U obj2, string connectionStringName, string storedProcedure1, string storedProcedure2)
+        {
+            using(IDbConnection cnn = new SqlConnection(DataString.GetConnectionString(connectionStringName)))
+            {
+                var trans = cnn.BeginTransaction();
+
             }
         }
     }
