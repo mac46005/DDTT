@@ -11,6 +11,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
 {
     public class AccessTipsData
     {
+        public void Insert(Tip tip)
+        {
+            using (ISaveSingleData cnn = new SqlDataAccess())
+            {
+                cnn.SaveData<Tip>("dbo.spTip_Insert", "", tip);
+            }
+        }
         public Tip GetById(int id)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())

@@ -11,6 +11,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
 {
     public class AccessDDPayData
     {
+        public void Insert(DD_Pay ddPay)
+        {
+            using (ISaveSingleData cnn = new SqlDataAccess())
+            {
+                cnn.SaveData<DD_Pay>("dbo.DDPay_Insert", "", ddPay);
+            }
+        }
         public List<DD_Pay> GetAll()
         {
             using (ILoadSetData cnn = new SqlDataAccess())

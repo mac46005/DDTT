@@ -11,6 +11,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
 {
     public class AccessExpenseData
     {
+        public void Insert(Expenditure expenditure)
+        {
+            using (ISaveSingleData cnn = new SqlDataAccess())
+            {
+                cnn.SaveData<Expenditure>("dbo.spExpenditure_Insert", "", expenditure);
+            }
+        }
         public Expenditure GetById(int id)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())

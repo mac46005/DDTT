@@ -11,6 +11,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
 {
     public class AccessMileageData
     {
+        public void Insert(Mileage mileage)
+        {
+            using (ISaveSingleData cnn = new SqlDataAccess())
+            {
+                cnn.SaveData<Mileage>("dbo.spMileage_Insert", "", mileage);
+            }
+        }
         public Mileage GetById(int id)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
