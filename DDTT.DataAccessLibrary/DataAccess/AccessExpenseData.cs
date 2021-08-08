@@ -25,5 +25,12 @@ namespace DDTT.DataAccessLibrary.DataAccess
                 return cnn.LoadSetData<Expenditure, dynamic>("dbo.Expenditure_GetAll", "", new { });
             }
         }
+        public void DeleteById(int id)
+        {
+            using (ISaveSingleData cnn = new SqlDataAccess())
+            {
+                cnn.SaveData<dynamic>("spExpenditure_GetById", "",new { Id = id });
+            }
+        }
     }
 }
