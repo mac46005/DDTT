@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE [dbo].[spDDPay_DeleteById]
+	@Id INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	DELETE FROM dbo.DD_Pays
+	WHERE Id = @id;
+END

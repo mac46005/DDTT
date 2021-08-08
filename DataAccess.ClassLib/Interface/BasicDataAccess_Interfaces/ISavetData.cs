@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces
 {
-    public interface IInsertData : IDisposable
+    public interface ISavetData : IDisposable
     {
         void SaveData<T>(string storedProcedure, string connectionStringName, T obj);
     }

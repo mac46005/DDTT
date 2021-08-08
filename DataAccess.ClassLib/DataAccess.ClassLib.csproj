@@ -69,7 +69,7 @@
     <Compile Include="GenericDataAccess\MapMultiObjects.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSetData.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSingleData.cs" />
-    <Compile Include="Interface\BasicDataAccess_Interfaces\IInsertData.cs" />
+    <Compile Include="Interface\BasicDataAccess_Interfaces\ISavetData.cs" />
     <Compile Include="Interface\MapMultipleObject_Interfaces\IMapThreeObjects.cs" />
     <Compile Include="Interface\MapMultipleObject_Interfaces\IMapTwoObjects.cs" />
     <Compile Include="Interface\SelectMultipleSet_Interfaces\ISelectMultipleSet.cs" />

@@ -25,5 +25,12 @@ namespace DDTT.DataAccessLibrary.DataAccess
                 return cnn.LoadSingleData<DD_Pay, dynamic>("dbo.spDDPay_GetById", "", new { Id = id });
             }
         }
+        public void DeleteById(int id)
+        {
+            using (ISavetData cnn = new BasicSqlDataAccess())
+            {
+                cnn.SaveData<dynamic>("dbo.spDDPay_DeleteById", "", new { Id = id });
+            }
+        }
     }
 }

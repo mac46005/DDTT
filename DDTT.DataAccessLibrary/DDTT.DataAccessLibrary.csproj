@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\AccessDDPay.cs" />
     <Compile Include="DataAccess\AccessIncome.cs" />
+    <Compile Include="DataAccess\AccessTips.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
