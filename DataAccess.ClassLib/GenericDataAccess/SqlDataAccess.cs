@@ -71,7 +71,7 @@ namespace DataAccess.ClassLib.GenericDataAccess
         //dispose
 
         private IDbConnection _connection;
-        private IDbTransaction _transaction;
+        private IDbTransaction _transaction; 
         public void StartTransaction(string connectionStringName)
         {
             _connection = new SqlConnection(DataString.GetConnectionString(connectionStringName));
