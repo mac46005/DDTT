@@ -81,6 +81,7 @@
     <Build Include="dbo\Stored Procedure\spExpenditure_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenseType_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spIncome_Insert.sql" />
+    <Build Include="dbo\Stored Procedure\spIncome_DeleteById.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="DDTT_SqlProj.refactorlog" />
