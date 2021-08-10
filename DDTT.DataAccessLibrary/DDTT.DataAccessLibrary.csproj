@@ -46,8 +46,13 @@
   <ItemGroup>
     <Compile Include="DataAccess\AccessExpenseData.cs" />
     <Compile Include="DataAccess\AccessExpenseTypeData.cs" />
-    <Compile Include="DataAccess\AccessIncome.cs" />
     <Compile Include="DataAccess\AccessMileageData.cs" />
+    <Compile Include="DataAccess\Interfaces\IDataAccess.cs" />
+    <Compile Include="DataAccess\Interfaces\IDeleteById.cs" />
+    <Compile Include="DataAccess\Interfaces\IGetAll.cs" />
+    <Compile Include="DataAccess\Interfaces\IGetById.cs" />
+    <Compile Include="DataAccess\Interfaces\IInsert.cs" />
+    <Compile Include="DataAccess\spAccessIncomeData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
