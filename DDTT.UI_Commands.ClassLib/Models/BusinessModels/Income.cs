@@ -9,7 +9,11 @@ namespace DDTT.ClassLib.Models.BusinessModels
 {
     public class Income
     {
-        public DD_Pay DD_Pay { get; set; }
-        public Tip Tip { get; set; }
+        public int Id { get; set; }
+        public int JobTypeId { get; set; }
+        public int JobType { get; set; }
+        public decimal BasePay { get; set; }
+        public decimal Tip { get; set; }
+        public DateTime TimeStamp { get; set; }
     }
 }
