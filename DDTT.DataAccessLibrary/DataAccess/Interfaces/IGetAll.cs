@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.DataAccessLibrary.DataAccess.Interfaces
 {
-    interface IGetAll<T>
+    public interface IGetAll<T>
     {
         List<T> GetAll();
     }
