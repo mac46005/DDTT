@@ -1,7 +1,0 @@
-﻿CREATE PROCEDURE [dbo].[spDDPay_GetAll]
-AS
-BEGIN
-	SET NOCOUNT ON;
-	SELECT Id,Amount,TimeStamp
-	FROM dbo.DD_Pays
-END

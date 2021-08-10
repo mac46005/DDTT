@@ -44,12 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\AccessDDPayData.cs" />
     <Compile Include="DataAccess\AccessExpenseData.cs" />
     <Compile Include="DataAccess\AccessExpenseTypeData.cs" />
     <Compile Include="DataAccess\AccessIncome.cs" />
     <Compile Include="DataAccess\AccessMileageData.cs" />
-    <Compile Include="DataAccess\AccessTipsData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

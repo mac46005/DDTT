@@ -65,13 +65,8 @@
   <ItemGroup>
     <Build Include="dbo\Tables\Expenditures.sql" />
     <Build Include="dbo\Tables\ExpenseTypes.sql" />
-    <Build Include="dbo\Tables\DD_Pays.sql" />
     <Build Include="dbo\Tables\Incomes.sql" />
     <Build Include="dbo\Tables\Mileages.sql" />
-    <Build Include="dbo\Tables\Tips.sql" />
-    <Build Include="dbo\Stored Procedure\spDDPay_Insert.sql" />
-    <Build Include="dbo\Stored Procedure\spDDPay_GetById.sql" />
-    <Build Include="dbo\Stored Procedure\spDDPay_GetAll.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_Insert.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_GetById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_GetAll.sql" />
@@ -81,14 +76,12 @@
     <Build Include="dbo\Stored Procedure\spMileage_Insert.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_GetById.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_GetAll.sql" />
-    <Build Include="dbo\Stored Procedure\spTip_Insert.sql" />
-    <Build Include="dbo\Stored Procedure\spTip_GetById.sql" />
-    <Build Include="dbo\Stored Procedure\spTip_GetAll.sql" />
     <Build Include="dbo\Stored Procedure\spIncome_GetAll.sql" />
-    <Build Include="dbo\Stored Procedure\spDDPay_DeleteById.sql" />
-    <Build Include="dbo\Stored Procedure\spTip_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spMileage_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenditure_DeleteById.sql" />
     <Build Include="dbo\Stored Procedure\spExpenseType_DeleteById.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="DDTT_SqlProj.refactorlog" />
   </ItemGroup>
 </Project>
