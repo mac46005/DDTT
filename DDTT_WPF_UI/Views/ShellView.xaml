@@ -21,7 +21,7 @@
                 <ColumnDefinition Width="65*"/>
                 <ColumnDefinition Width="331*"/>
             </Grid.ColumnDefinitions>
-            <ContentControl x:Name="ActiveItem" Margin="20 5 20 20" Grid.ColumnSpan="2">
+            <ContentControl x:Name="ActiveItem" Grid.ColumnSpan="2">
 
             </ContentControl>
         </Grid>

@@ -6,8 +6,34 @@
              xmlns:local="clr-namespace:DDTT_WPF_UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
-             Background="White">
+             Background="Black"
+             Foreground="White">
+    <UserControl.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </UserControl.Resources>
     <Grid>
-            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label FontSize="70" HorizontalAlignment="Center" 
+               Grid.ColumnSpan="3" Grid.Row="0" Content="DashBoard"/>
+        <DockPanel Grid.Row="1" Grid.Column="1">
+            <Label Content="Current Job" FontSize="25"/>
+            <ListBox HorizontalAlignment="Stretch" />
+        </DockPanel>
+        <ListViewItem Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="2">
+            <DataTemplate>
+                
+            </DataTemplate>
+        </ListViewItem>
     </Grid>
 </UserControl>

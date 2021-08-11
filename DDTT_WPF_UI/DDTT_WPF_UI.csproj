@@ -90,9 +90,13 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="ViewModels\AddExpenseViewModel.cs" />
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
     <Compile Include="ViewModels\DashBoardViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\AddExpenseView.xaml.cs">
+      <DependentUpon>AddExpenseView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddIncomeView.xaml.cs">
       <DependentUpon>AddIncomeView.xaml</DependentUpon>
     </Compile>
@@ -134,6 +138,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\AddExpenseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AddIncomeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
