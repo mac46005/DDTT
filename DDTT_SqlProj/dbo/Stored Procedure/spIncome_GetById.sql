@@ -1,8 +1,9 @@
 ﻿CREATE PROCEDURE [dbo].[spIncome_GetById]
-	@Id = id
+	@Id INT
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT FROM dbo.Incomes
-	WHERE Id = @Id+
+	SELECT Id,JobTypeId,BasePay,Tip,TimeStamp
+	FROM dbo.Incomes
+	WHERE Id = @Id;
 END
