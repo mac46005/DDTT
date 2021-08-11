@@ -21,14 +21,6 @@ namespace DDTT_WPF_UI.ViewModels
         {
             ActivateItem(IoC.Get<AddExpenseViewModel>());
         }
-        public void ManageDDPay()
-        {
-
-        }
-        public void ManageTips()
-        {
-
-        }
         public void ManageExpenseTypes()
         {
 

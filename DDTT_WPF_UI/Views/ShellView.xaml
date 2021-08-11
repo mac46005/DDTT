@@ -8,12 +8,15 @@
         Title="ShellView" Height="450" Width="800">
     <DockPanel>
         <Menu DockPanel.Dock="Top" FontSize="18">
-            <MenuItem Header="Manage Business">
+            <MenuItem Header="Add Data">
                 <MenuItem Header="Add Income" x:Name="AddIncome"/>
                 <MenuItem Header="Add Expense" x:Name="AddExpense"/>
-                <MenuItem Header="Manage DD Pay" x:Name="ManageDDPay"/>
-                <MenuItem Header="Manage Tips" x:Name="ManageTips"/>
-                <MenuItem Header="Manage Expense Types" x:Name="ManageExpenseTypes"/>
+            </MenuItem>
+            <MenuItem Header="Manage Data">
+                <MenuItem Header="Manage Income" x:Name="ManageIncome"/>
+                <MenuItem Header="Manage Expenditures" x:Name="ManageExpenditures"/>
+                <MenuItem Header="Manage Expenditure Types" x:Name="ManageExpenditureTypes"/>
+                <MenuItem Header="Manage Job Types" x:Name="ManageJobTypes"/>
             </MenuItem>
         </Menu>
         <Grid>
