@@ -1,6 +1,7 @@
 ﻿using DataAccess.ClassLib.GenericDataAccess;
 using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 using DDTT.ClassLib.Models.BusinessModels;
+using DDTT.DataAccessLibrary.DataAccess.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class AccessExpenseData
+    public class AccessExpenseData : IDataAccess<Expenditure>
     {
         public void Insert(Expenditure expenditure)
         {
