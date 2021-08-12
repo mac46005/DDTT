@@ -15,12 +15,13 @@ namespace DDTT_WPF_UI.ViewModels
         public DashBoardViewModel(IDataAccess<JobType> accessJobTypeData)
         {
             _getAllJobTypes = accessJobTypeData;
+            LoadData();
         }
         private void LoadData()
         {
-
+            JobTypeList = _getAllJobTypes.GetAll();
         }
-        public List<JobType> JobTypeList() => _getAllJobTypes.GetAll();
+        public List<JobType> JobTypeList { get; set; }
 
 
     }

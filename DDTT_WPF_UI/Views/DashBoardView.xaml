@@ -26,12 +26,13 @@
             Grid.Row="1" Grid.Column="1">
             <Label Content="Current Job" 
                    FontSize="25"/>
-            <ListBox ItemsSource="{Binding JobTypeList}" 
-                HorizontalAlignment="Stretch">
-                <DataTemplate>
-                    
-                </DataTemplate>
-            </ListBox>
+            <ComboBox ItemsSource="{Binding JobTypeList}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <Label Content="{Binding Job}"/>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </DockPanel>
         
         <ListViewItem Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="2">

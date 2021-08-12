@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="DataAccess\AccessExpenseData.cs" />
     <Compile Include="DataAccess\AccessExpenseTypeData.cs" />
+    <Compile Include="DataAccess\AccessJobTypeData.cs" />
     <Compile Include="DataAccess\AccessMileageData.cs" />
     <Compile Include="DataAccess\Interfaces\IDataAccess.cs" />
     <Compile Include="DataAccess\Interfaces\IDeleteById.cs" />
