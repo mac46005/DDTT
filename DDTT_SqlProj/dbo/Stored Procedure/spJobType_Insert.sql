@@ -1,0 +1,9 @@
+﻿CREATE PROCEDURE [dbo].[spJobType_Insert]
+	@Job NVARCHAR
+AS
+BEGIN
+	SET NOCOUNT ON;
+	INSERT INTO dbo.JobTypes(Job)
+	VALUES(@Job)
+END
+
