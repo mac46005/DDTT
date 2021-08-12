@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DDTT.DataAccessLibrary.DB_Helper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
@@ -16,28 +17,28 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<Mileage>("dbo.spMileage_Insert", "", mileage);
+                cnn.SaveData<Mileage>("dbo.spMileage_Insert", dbName, mileage);
             }
         }
         public Mileage GetById(int id)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<Mileage, dynamic>("dbo.spMileage_GetById", "", new { Id = id });
+                return cnn.LoadSingleData<Mileage, dynamic>("dbo.spMileage_GetById", dbName, new { Id = id });
             }
         }
         public List<Mileage> GetAll()
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSetData<Mileage, dynamic>("dbo.spMileage_GetAll", "", new { });
+                return cnn.LoadSetData<Mileage, dynamic>("dbo.spMileage_GetAll", dbName, new { });
             }
         }
         public void DeleteById(int id)
         {
             using(ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>("dbo.spMileage_DeleteById", "",new { Id = id });
+                cnn.SaveData<dynamic>("dbo.spMileage_DeleteById", dbName,new { Id = id });
             }
         }
     }

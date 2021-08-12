@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 using DataAccess.ClassLib.GenericDataAccess;
+using static DDTT.DataAccessLibrary.DB_Helper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
@@ -17,7 +18,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
                 
-                cnn.SaveData<dynamic>("dbo.spIncome_DeleteById", "", new { Id = id });
+                cnn.SaveData<dynamic>("dbo.spIncome_DeleteById", dbName, new { Id = id });
             }
         }
 
@@ -25,7 +26,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSetData<Income, dynamic>("dbo.spIncome_GetAll", "", new { });
+                return cnn.LoadSetData<Income, dynamic>("dbo.spIncome_GetAll", dbName, new { });
             }
         }
 
@@ -33,7 +34,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<Income, dynamic>("dbo.spIncome_Get","",new { Id = id });
+                return cnn.LoadSingleData<Income, dynamic>("dbo.spIncome_Get",dbName,new { Id = id });
             }
         }
 
@@ -41,7 +42,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<Income>("dbo.spIncome_Insert", "", obj);
+                cnn.SaveData<Income>("dbo.spIncome_Insert", dbName, obj);
             }
         }
     }
