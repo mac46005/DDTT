@@ -92,6 +92,7 @@
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="ViewModels\AddExpenseViewModel.cs" />
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
+    <Compile Include="ViewModels\AddMileageViewModel.cs" />
     <Compile Include="ViewModels\DashBoardViewModel.cs" />
     <Compile Include="ViewModels\ManageExpendituresViewModel.cs" />
     <Compile Include="ViewModels\ManageExpenseTypesViewModel.cs" />
@@ -103,6 +104,9 @@
     </Compile>
     <Compile Include="Views\AddIncomeView.xaml.cs">
       <DependentUpon>AddIncomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddMileageView.xaml.cs">
+      <DependentUpon>AddMileageView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DashBoardView.xaml.cs">
       <DependentUpon>DashBoardView.xaml</DependentUpon>
@@ -159,6 +163,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AddIncomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddMileageView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

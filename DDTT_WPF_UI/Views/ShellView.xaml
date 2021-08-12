@@ -11,6 +11,7 @@
             <MenuItem Header="Add Data">
                 <MenuItem Header="Add Income" x:Name="AddIncome"/>
                 <MenuItem Header="Add Expense" x:Name="AddExpense"/>
+                <MenuItem Header="Add Mileage" x:Name="AddMileage"/>
             </MenuItem>
             <MenuItem Header="Manage Data">
                 <MenuItem Header="Manage Income" x:Name="ManageIncome"/>
