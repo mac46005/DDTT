@@ -42,7 +42,8 @@ namespace DDTT_WPF_UI
                 .PerRequest<Mileage, Mileage>()
                 .PerRequest<IDataAccess<Income>, AccessIncomeData>()
                 .PerRequest<IDataAccess<Expenditure>, AccessExpenseData>()
-                .PerRequest<IDataAccess<ExpenseType>, AccessExpenseTypeData>();
+                .PerRequest<IDataAccess<ExpenseType>, AccessExpenseTypeData>()
+                .PerRequest<IDataAccess<JobType>,AccessJobTypeData>();
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
                 .Where(type => type.Name.EndsWith("ViewModel"))
