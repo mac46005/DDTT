@@ -1,0 +1,7 @@
+﻿CREATE PROCEDURE [dbo].[spJobType_GetAll]
+AS
+BEGIN
+	SET NOCOUNT ON;
+	SELECT Id,Job
+	FROM dbo.JobTypes
+END
