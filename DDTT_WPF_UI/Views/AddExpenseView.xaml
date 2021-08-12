@@ -20,28 +20,36 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Label Content="Add Expense" 
                FontSize="50"
                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
 
-        <Label Content="Amount:" 
+        <Label Content="Job:"
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="2" Grid.Column="1"/>
+        <Label Content="{Binding JobType}"
+               FontSize="30"
+               Grid.Row="2" Grid.Column="3"/>
+
+        <Label Content="Amount:" 
+               FontSize="30" HorizontalAlignment="Right"
+               Grid.Row="3" Grid.Column="1"/>
         <TextBox FontSize="30"
-                 Grid.Row="2" Grid.Column="2"/>
+                 Grid.Row="3" Grid.Column="2"/>
 
         <Label Content="Time Stamp:" 
                FontSize="30" HorizontalAlignment="Right"
-               Grid.Row="3" Grid.Column="1"/>
+               Grid.Row="4" Grid.Column="1"/>
         <DatePicker
             FontSize="30"
-            Grid.Row="3" Grid.Column="2"/>
+            Grid.Row="4" Grid.Column="2"/>
 
         <Button Content="Submit"
                 FontSize="30"
-                Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"/>
+                Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 </UserControl>

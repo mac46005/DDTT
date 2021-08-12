@@ -94,6 +94,7 @@
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
     <Compile Include="ViewModels\DashBoardViewModel.cs" />
     <Compile Include="ViewModels\ManageExpendituresViewModel.cs" />
+    <Compile Include="ViewModels\ManageExpenseTypesViewModel.cs" />
     <Compile Include="ViewModels\ManageIncomeViewModel.cs" />
     <Compile Include="ViewModels\ManageJobTypesViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
@@ -106,8 +107,17 @@
     <Compile Include="Views\DashBoardView.xaml.cs">
       <DependentUpon>DashBoardView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\ManageExpendituresView.xaml.cs">
+      <DependentUpon>ManageExpendituresView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManageExpenseTypesView.xaml.cs">
+      <DependentUpon>ManageExpenseTypesView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ManageIncomeView.xaml.cs">
       <DependentUpon>ManageIncomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ManageJobTypesView.xaml.cs">
+      <DependentUpon>ManageJobTypesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ShellView.xaml.cs">
       <DependentUpon>ShellView.xaml</DependentUpon>
@@ -156,7 +166,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\ManageExpendituresView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ManageExpenseTypesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ManageIncomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ManageJobTypesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

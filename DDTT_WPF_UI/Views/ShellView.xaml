@@ -15,7 +15,7 @@
             <MenuItem Header="Manage Data">
                 <MenuItem Header="Manage Income" x:Name="ManageIncome"/>
                 <MenuItem Header="Manage Expenditures" x:Name="ManageExpenditures"/>
-                <MenuItem Header="Manage Expenditure Types" x:Name="ManageExpenditureTypes"/>
+                <MenuItem Header="Manage Expenditure Types" x:Name="ManageExpenseTypes"/>
                 <MenuItem Header="Manage Job Types" x:Name="ManageJobTypes"/>
             </MenuItem>
         </Menu>
