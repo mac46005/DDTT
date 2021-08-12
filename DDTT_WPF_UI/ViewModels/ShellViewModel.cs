@@ -21,9 +21,21 @@ namespace DDTT_WPF_UI.ViewModels
         {
             ActivateItem(IoC.Get<AddExpenseViewModel>());
         }
+        public void ManageIncome() 
+        {
+            ActivateItem(IoC.Get<ManageIncomeViewModel>())
+        }
+        public void ManageExpenditures()
+        {
+            ActivateItem(IoC.Get<ManageExpendituresViewModel>())
+        }
         public void ManageExpenseTypes()
         {
-
+            ActivateItem(IoC.Get<ManageExpendituresViewModel>());
+        }
+        public void ManageJobTypes()
+        {
+            ActivateItem(IoC.Get<ManageJobTypesViewModel>());
         }
     }
 }

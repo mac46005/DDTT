@@ -13,5 +13,9 @@ namespace DDTT_WPF_UI
     /// </summary>
     public partial class App : Application
     {
+        public App()
+        {
+            InitializeComponent();
+        }
     }
 }
