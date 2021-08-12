@@ -1,0 +1,8 @@
+﻿CREATE PROCEDURE [dbo].[spJobType_DeleteById]
+	@Id INT
+AS
+BEGIN
+	SET NOCOUNT ON;
+	DELETE FROM dbo.JobTypes
+	WHERE Id = @Id;
+END
