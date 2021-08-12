@@ -21,7 +21,6 @@ namespace DataAccess.ClassLib.GenericDataAccess
     {
         public void Dispose()
         {
-            throw new NotImplementedException();
         }
 
         public T LoadSingleData<T, U>(string storedProcedure, string connectionStringName, U parameters)
