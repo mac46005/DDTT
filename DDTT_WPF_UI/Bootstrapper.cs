@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using AutoMapper;
 using Caliburn.Micro;
+using DDTT.ClassLib.Models.BusinessModels;
 using DDTT_WPF_UI.ViewModels;
 
 namespace DDTT_WPF_UI
@@ -31,6 +32,12 @@ namespace DDTT_WPF_UI
                 .Singleton<IWindowManager, WindowManager>()
                 .Singleton<IEventAggregator, EventAggregator>();
 
+            _container
+                .PerRequest<Income, Income>()
+                .PerRequest<Expenditure, Expenditure>()
+                .PerRequest<ExpenseType, ExpenseType>()
+                .PerRequest<JobType, JobType>()
+                .PerRequest<Mileage, Mileage>();
 
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)

@@ -22,11 +22,11 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        
         <Label Content="Add Expense" 
                FontSize="50"
                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
-
+        
         <Label Content="Job:"
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="2" Grid.Column="1"/>
@@ -50,6 +50,6 @@
         <Button Content="Submit"
                 FontSize="30"
                 Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
-
+        
     </Grid>
 </UserControl>

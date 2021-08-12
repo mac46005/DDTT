@@ -9,5 +9,6 @@ namespace DDTT_WPF_UI.ViewModels
 {
     internal class AddExpenseViewModel : Screen
     {
+
     }
 }

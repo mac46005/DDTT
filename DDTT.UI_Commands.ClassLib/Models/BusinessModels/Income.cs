@@ -11,7 +11,7 @@ namespace DDTT.ClassLib.Models.BusinessModels
     {
         public int Id { get; set; }
         public int JobTypeId { get; set; }
-        public int JobType { get; set; }
+        public JobType JobType { get; set; }
         public decimal BasePay { get; set; }
         public decimal Tip { get; set; }
         public DateTime TimeStamp { get; set; }
