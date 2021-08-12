@@ -10,7 +10,7 @@ using DataAccess.ClassLib.GenericDataAccess;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class spAccessIncomeData : IDataAccess<Income>
+    public class AccessIncomeData : IDataAccess<Income>
     {
         public void DeleteById(int id)
         {

@@ -7,6 +7,8 @@ using System.Windows;
 using AutoMapper;
 using Caliburn.Micro;
 using DDTT.ClassLib.Models.BusinessModels;
+using DDTT.DataAccessLibrary.DataAccess;
+using DDTT.DataAccessLibrary.DataAccess.Interfaces;
 using DDTT_WPF_UI.ViewModels;
 
 namespace DDTT_WPF_UI
@@ -37,8 +39,8 @@ namespace DDTT_WPF_UI
                 .PerRequest<Expenditure, Expenditure>()
                 .PerRequest<ExpenseType, ExpenseType>()
                 .PerRequest<JobType, JobType>()
-                .PerRequest<Mileage, Mileage>();
-
+                .PerRequest<Mileage, Mileage>()
+                .PerRequest<IDataAccess<Income>,AccessIncomeData>();
             GetType().Assembly.GetTypes()
                 .Where(type => type.IsClass)
                 .Where(type => type.Name.EndsWith("ViewModel"))
