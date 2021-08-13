@@ -31,6 +31,7 @@ namespace DDTT_WPF_UI.ViewModels
 
         public decimal Amount { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
+        public string Note { get; set; }
         public void Submit()
         {
             var expense = IoC.Get<Expenditure>();

@@ -1,4 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spIncome_Insert]
+    @Id INT OUTPUT,
 	@JobTypeId INT,
 	@BasePay MONEY,
 	@Tip MONEY,

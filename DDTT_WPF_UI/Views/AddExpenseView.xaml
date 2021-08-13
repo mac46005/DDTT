@@ -21,6 +21,7 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
         <Label Content="Add Expense" 
@@ -55,10 +56,18 @@
                     FontSize="30"
                     Grid.Row="4" Grid.Column="2"/>
 
+        <Label Content="Add Note:"
+               FontSize="20" HorizontalAlignment="Right"
+               Grid.Row="5" Grid.Column="0"/>
+        <TextBox x:Name="Note"
+                 TextWrapping="Wrap"
+                 FontSize="30"
+                 Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+
         <Button Content="Submit"
                 x:Name="Submit"
                 FontSize="30"
-                Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
+                Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="2"/>
 
     </Grid>
 </UserControl>
