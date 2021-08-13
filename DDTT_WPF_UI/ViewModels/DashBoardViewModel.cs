@@ -9,20 +9,13 @@ using System.Threading.Tasks;
 
 namespace DDTT_WPF_UI.ViewModels
 {
-    internal class DashBoardViewModel : Screen
+    internal class DashBoardViewModel : Conductor<object>
     {
-        private IGetAll<JobType> _getAllJobTypes;
         public DashBoardViewModel(IDataAccess<JobType> accessJobTypeData)
         {
-            _getAllJobTypes = accessJobTypeData;
-            LoadData();
         }
         private void LoadData()
         {
-            JobTypeList = _getAllJobTypes.GetAll();
         }
-        public List<JobType> JobTypeList { get; set; }
-
-
     }
 }

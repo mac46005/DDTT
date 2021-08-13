@@ -9,6 +9,7 @@
     <UserControl.Resources>
     </UserControl.Resources>
     <Grid>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -22,23 +23,11 @@
         <Label FontSize="70" HorizontalAlignment="Center" 
                Grid.ColumnSpan="3" Grid.Row="0" Content="DashBoard"/>
         
-        <DockPanel 
-            Grid.Row="1" Grid.Column="1">
-            <Label Content="Current Job" 
-                   FontSize="25"/>
-            <ComboBox ItemsSource="{Binding JobTypeList}">
-                <ComboBox.ItemTemplate>
-                    <DataTemplate>
-                        <Label Content="{Binding Job}"/>
-                    </DataTemplate>
-                </ComboBox.ItemTemplate>
-            </ComboBox>
-        </DockPanel>
-        
         <ListViewItem Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="2">
             <DataTemplate>
-                
+
             </DataTemplate>
         </ListViewItem>
     </Grid>
+
 </UserControl>
