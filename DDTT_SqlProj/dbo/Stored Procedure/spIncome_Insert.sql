@@ -8,4 +8,5 @@ AS
 BEGIN
 	INSERT INTO dbo.Incomes(JobTypeId,BasePay,Tip,TimeStamp)
 	VALUES(@JobTypeId,@BasePay,@Tip,@TimeStamp);
+	SELECT @Id = SCOPE_IDENTITY();
 END
