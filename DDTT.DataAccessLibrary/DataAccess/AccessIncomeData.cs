@@ -42,7 +42,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<Income>("dbo.spIncome_Insert", dbName, obj);
+                cnn.SaveData<dynamic>("dbo.spIncome_Insert", dbName, new
+                {
+                    JobTypeId = obj.JobTypeId,
+                    BasePay = obj.BasePay,
+                    Tip = obj.Tip,
+                    TimeStamp = obj.TimeStamp
+                });
             }
         }
     }

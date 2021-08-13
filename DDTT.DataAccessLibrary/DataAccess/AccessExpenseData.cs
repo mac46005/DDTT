@@ -16,7 +16,15 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<Expenditure>("dbo.spExpenditure_Insert", "", expenditure);
+                cnn.SaveData<dynamic>("dbo.spExpenditure_Insert", "", new
+                {
+                    JobTypeId = expenditure.JobTypeId,
+                    Amount = expenditure.Amount,
+                    TimeStamp = expenditure.TimeStamp,
+                    ExpenseTypeId = expenditure.ExpenseTypeId,
+                    Note = expenditure.Note
+
+                });
             }
         }
         public Expenditure GetById(int id)

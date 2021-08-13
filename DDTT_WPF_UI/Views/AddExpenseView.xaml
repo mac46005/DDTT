@@ -33,7 +33,13 @@
         <ComboBox ItemsSource="{Binding JobTypeList}" 
                   SelectedItem="{Binding SelectedJobType}"
                   FontSize="30"
-                  Grid.Row="2" Grid.Column="2"
+                  Grid.Row="2" Grid.Column="2">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <Label Content="{Binding Job}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
 
         <Label Content="Amount:" 
                FontSize="30" HorizontalAlignment="Right"

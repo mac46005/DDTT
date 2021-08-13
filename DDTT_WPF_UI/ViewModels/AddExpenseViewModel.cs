@@ -12,25 +12,34 @@ namespace DDTT_WPF_UI.ViewModels
     internal class AddExpenseViewModel : Screen
     {
         private IGetAll<JobType> _getAllJobTypes;
+        private IInsert<Expenditure> _insertExpenditure;
 
 
 
-        public JobType SelectedJobType { get; set; }
-        public AddExpenseViewModel(IDataAccess<JobType> dataAccess)
+        public AddExpenseViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Expenditure> accessExpenditureData)
         {
-            _getAllJobTypes = dataAccess;
+            _getAllJobTypes = accessJobTypeData;
+            _insertExpenditure = accessExpenditureData;
+            LoadData();
         }
         public void LoadData()
         {
             JobTypeList = _getAllJobTypes.GetAll();
         }
+        public JobType SelectedJobType { get; set; }
         public List<JobType> JobTypeList { get; set; }
 
         public decimal Amount { get; set; }
-        public DateTime TimeStamp { get; set; }
+        public DateTime TimeStamp { get; set; } = DateTime.Now;
         public void Submit()
         {
             var expense = IoC.Get<Expenditure>();
+            expense.JobTypeId = SelectedJobType.Id;
+            expense.JobType = SelectedJobType;
+            expense.Amount = Amount;
+            expense.TimeStamp = TimeStamp;
+
+            _insertExpenditure.Insert(expense);
         }
     }
 }
