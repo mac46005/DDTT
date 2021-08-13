@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spIncome_Insert]
-    @Id INT OUTPUT,
+    /*@Id INT OUTPUT,*/
 	@JobTypeId INT,
 	@BasePay MONEY,
 	@Tip MONEY,
@@ -8,5 +8,5 @@ AS
 BEGIN
 	INSERT INTO dbo.Incomes(JobTypeId,BasePay,Tip,TimeStamp)
 	VALUES(@JobTypeId,@BasePay,@Tip,@TimeStamp);
-	SELECT @Id = SCOPE_IDENTITY();
+	/*SELECT @Id = SCOPE_IDENTITY();*/
 END

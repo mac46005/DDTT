@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DDTT.DataAccessLibrary.DB_Helper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
@@ -16,7 +17,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>("dbo.spExpenditure_Insert", "", new
+                cnn.SaveData<dynamic>("dbo.spExpenditure_Insert", dbName, new
                 {
                     JobTypeId = expenditure.JobTypeId,
                     Amount = expenditure.Amount,
@@ -31,21 +32,21 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<Expenditure, dynamic>("spExpenditure_GetById", "", new { Id = id });
+                return cnn.LoadSingleData<Expenditure, dynamic>("spExpenditure_GetById", dbName, new { Id = id });
             }
         }
         public List<Expenditure> GetAll()
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSetData<Expenditure, dynamic>("dbo.Expenditure_GetAll", "", new { });
+                return cnn.LoadSetData<Expenditure, dynamic>("dbo.Expenditure_GetAll", dbName, new { });
             }
         }
         public void DeleteById(int id)
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>("spExpenditure_GetById", "",new { Id = id });
+                cnn.SaveData<dynamic>("spExpenditure_GetById", dbName,new { Id = id });
             }
         }
     }
