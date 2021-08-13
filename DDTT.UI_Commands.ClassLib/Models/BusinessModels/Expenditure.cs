@@ -10,6 +10,8 @@ namespace DDTT.ClassLib.Models.BusinessModels
     public class Expenditure : IDD_DataModel
     {
         public int Id { get; set; }
+        public int JobTypeId { get; set; }
+        public JobType JobType { get; set; }
         /// <summary>
         /// Get and set the expense amount
         /// </summary>

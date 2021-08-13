@@ -24,5 +24,12 @@ namespace DDTT_WPF_UI.ViewModels
 
         public List<JobType> JobTypeList { get; set; }
 
+
+
+        public void Submit()
+        {
+
+        }
+
     }
 }

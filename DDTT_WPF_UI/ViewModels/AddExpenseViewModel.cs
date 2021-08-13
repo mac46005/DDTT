@@ -20,7 +20,17 @@ namespace DDTT_WPF_UI.ViewModels
         {
             _getAllJobTypes = dataAccess;
         }
-
+        public void LoadData()
+        {
+            JobTypeList = _getAllJobTypes.GetAll();
+        }
         public List<JobType> JobTypeList { get; set; }
+
+        public decimal Amount { get; set; }
+        public DateTime TimeStamp { get; set; }
+        public void Submit()
+        {
+            var expense = IoC.Get<Expenditure>();
+        }
     }
 }

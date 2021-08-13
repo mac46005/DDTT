@@ -22,35 +22,37 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <Label Content="Add Expense" 
                FontSize="30"
                Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" HorizontalAlignment="Center"/>
-        
+
         <Label Content="Job:"
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="2" Grid.Column="1"/>
-        <Label Content="{Binding JobType}"
-               FontSize="30"
-               Grid.Row="2" Grid.Column="3"/>
+        <ComboBox ItemsSource="{Binding JobTypeList}" 
+                  SelectedItem="{Binding SelectedJobType}"
+                  FontSize="30"
+                  Grid.Row="2" Grid.Column="2"
 
         <Label Content="Amount:" 
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="3" Grid.Column="1"/>
-        <TextBox FontSize="30"
+        <TextBox x:Name="Amount" 
+                 FontSize="30"
                  Grid.Row="3" Grid.Column="2"/>
 
         <Label Content="Time Stamp:" 
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="4" Grid.Column="1"/>
-        <DatePicker
-            FontSize="30"
-            Grid.Row="4" Grid.Column="2"/>
+        <DatePicker x:Name="TimeStamp"
+                    FontSize="30"
+                    Grid.Row="4" Grid.Column="2"/>
 
         <Button Content="Submit"
                 x:Name="Submit"
                 FontSize="30"
                 Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
-        
+
     </Grid>
 </UserControl>

@@ -3,7 +3,7 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT Id,Amount,TimeStamp,ExpenseTypeId,Note
+	SELECT Id,JobTypeId,Amount,TimeStamp,ExpenseTypeId,Note
 	FROM dbo.Expenditures
 	WHERE Id = @Id;
 END
