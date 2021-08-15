@@ -22,7 +22,9 @@ namespace DDTT_WPF_UI.ViewModels
       public List<JobType> JobTypeList {get;set;} = new List<JobType>();
       public JobType SelectedJobType {get;set;}
       
+      public decimal Amount { get; set; }
       
+      public DateTime TimeStamp { get; set; }
       
       
       
