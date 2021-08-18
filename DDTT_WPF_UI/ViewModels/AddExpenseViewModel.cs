@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using DDTT.ClassLib.Models.BusinessModels;
 using DDTT.DataAccessLibrary.DataAccess.Interfaces;
+using DDTT_WPF_UI.EventAggregatorFillerClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,18 @@ namespace DDTT_WPF_UI.ViewModels
     {
         private IGetAll<JobType> _getAllJobTypes;
         private IInsert<Expenditure> _insertExpenditure;
+        private IGetAll<ExpenseType> _getAllExpenseType;
+        private IEventAggregator _eventAggregator;
+        
 
-
-
-        public AddExpenseViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Expenditure> accessExpenditureData)
+        public AddExpenseViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Expenditure> accessExpenditureData,
+            IEventAggregator eventAggregator,IDataAccess<ExpenseType> accessExpenseTypeData)
         {
             _getAllJobTypes = accessJobTypeData;
             _insertExpenditure = accessExpenditureData;
+            _getAllExpenseType = accessExpenseTypeData;
+            _eventAggregator = eventAggregator;
+
             LoadData();
         }
         public void LoadData()
@@ -39,9 +45,9 @@ namespace DDTT_WPF_UI.ViewModels
             expense.JobType = SelectedJobType;
             expense.Amount = Amount;
             expense.TimeStamp = TimeStamp;
-
             _insertExpenditure.Insert(expense);
-            TryClose();
+
+            _eventAggregator.PublishOnUIThread(new NavigateToDashBoard());
         }
     }
 }

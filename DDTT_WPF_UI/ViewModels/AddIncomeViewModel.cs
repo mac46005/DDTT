@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using DDTT.ClassLib.Models.BusinessModels;
 using DDTT.DataAccessLibrary.DataAccess.Interfaces;
+using DDTT_WPF_UI.EventAggregatorFillerClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,13 +14,15 @@ namespace DDTT_WPF_UI.ViewModels
     {
         IGetAll<JobType> _getAllJobTypes;
         IInsert<Income> _insertIncome;
+        IEventAggregator _eventAggregator;
 
 
-
-        public AddIncomeViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Income> accessIncomeData)
+        public AddIncomeViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Income> accessIncomeData,
+            IEventAggregator eventAggregator)
         {
             _getAllJobTypes = accessJobTypeData;
             _insertIncome = accessIncomeData;
+            _eventAggregator = eventAggregator;
             LoadData();
         }
 
@@ -42,9 +45,10 @@ namespace DDTT_WPF_UI.ViewModels
             income.BasePay = BasePay;
             income.Tip = Tip;
             income.TimeStamp = TimeStamp;
-
             _insertIncome.Insert(income);
-            this.TryClose();
+
+
+            _eventAggregator.PublishOnUIThread(new NavigateToDashBoard());
         }
 
     }

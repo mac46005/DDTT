@@ -1,6 +1,7 @@
 ﻿using Caliburn.Micro;
 using DDTT.ClassLib.Models.BusinessModels;
 using DDTT.DataAccessLibrary.DataAccess.Interfaces;
+using DDTT_WPF_UI.EventAggregatorFillerClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,13 @@ using System.Threading.Tasks;
 
 namespace DDTT_WPF_UI.ViewModels
 {
-    internal class ShellViewModel : Conductor<object>
+    internal class ShellViewModel : Conductor<object>, IHandle<NavigateToDashBoard>
     {
-        
-        public ShellViewModel()
+        IEventAggregator _eventAggregator;
+        public ShellViewModel(IEventAggregator eventAggregator)
         {
+            _eventAggregator = eventAggregator;
+            _eventAggregator.Subscribe(this);
             ActivateItem(IoC.Get<DashBoardViewModel>());
         }
 
@@ -44,6 +47,14 @@ namespace DDTT_WPF_UI.ViewModels
         public void ManageJobTypes()
         {
             ActivateItem(IoC.Get<ManageJobTypesViewModel>());
+        }
+
+
+
+        // EventAggregator 
+        public void Handle(NavigateToDashBoard message)
+        {
+            ActivateItem(IoC.Get<DashBoardViewModel>());
         }
     }
 }
