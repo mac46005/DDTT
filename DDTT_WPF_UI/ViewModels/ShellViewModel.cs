@@ -11,6 +11,7 @@ namespace DDTT_WPF_UI.ViewModels
 {
     internal class ShellViewModel : Conductor<object>
     {
+        
         public ShellViewModel()
         {
             ActivateItem(IoC.Get<DashBoardViewModel>());

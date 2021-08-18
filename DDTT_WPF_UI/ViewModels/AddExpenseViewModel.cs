@@ -41,6 +41,7 @@ namespace DDTT_WPF_UI.ViewModels
             expense.TimeStamp = TimeStamp;
 
             _insertExpenditure.Insert(expense);
+            TryClose();
         }
     }
 }

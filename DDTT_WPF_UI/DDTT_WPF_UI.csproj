@@ -90,6 +90,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Bootstrapper.cs" />
+    <Compile Include="EventAggregatorFillerClasses\NavigateToDashBoard.cs" />
     <Compile Include="ViewModels\AddExpenseViewModel.cs" />
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
     <Compile Include="ViewModels\AddMileageViewModel.cs" />

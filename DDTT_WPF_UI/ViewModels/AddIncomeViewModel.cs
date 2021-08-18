@@ -44,6 +44,7 @@ namespace DDTT_WPF_UI.ViewModels
             income.TimeStamp = TimeStamp;
 
             _insertIncome.Insert(income);
+            this.TryClose();
         }
 
     }
