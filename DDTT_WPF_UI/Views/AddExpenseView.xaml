@@ -34,25 +34,35 @@
                    Grid.Row="2" Grid.Column="1"/>
         <ComboBox x:Name="ExpenseTypeList"
                   SelectedItem="{Binding SelectedExpenseType}"
-                  FontSize="30"
+                  FontSize="25"
                   Grid.Row="2" Grid.Column="2">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
-                    <TextBlock Text="{Binding CategoryName}"/>
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top">
+                        <Label Content="{Binding Id}"/>
+                        <Label Content=":"/>
+                        <Label Content="{Binding CategoryName}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
 
         <Label Content="Job:"
-               FontSize="30" HorizontalAlignment="Right"
+               FontSize="25" HorizontalAlignment="Right"
                Grid.Row="3" Grid.Column="1"/>
         <ComboBox ItemsSource="{Binding JobTypeList}" 
                   SelectedItem="{Binding SelectedJobType}"
-                  FontSize="30"
+                  FontSize="25"
                   Grid.Row="3" Grid.Column="2">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding Job}"/>
+                    <StackPanel Orientation="Horizontal"
+                                VerticalAlignment="Top">
+                        <Label Content="{Binding Id}"/>
+                        <Label Content=":"/>
+                        <Label Content="{Binding Job}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>

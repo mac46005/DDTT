@@ -33,11 +33,16 @@
         <ComboBox
             ItemsSource="{Binding JobTypeList}"
             SelectedItem="{Binding SelectedJobType}"
-            FontSize="30"
+            FontSize="25"
             Grid.Row="2" Grid.Column="2">
             <ComboBox.ItemTemplate>
                 <DataTemplate>
-                    <Label Content="{Binding Job}"/>
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="top">
+                        <Label Content="{Binding Id}"/>
+                        <Label Content=":"/>
+                        <Label Content="{Binding Job}"/>
+                    </StackPanel>
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
