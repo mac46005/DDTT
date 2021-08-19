@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DDTT_WPF_UI.ViewModels
+namespace DDTT_WPF_UI.Views
 {
     /// <summary>
-    /// Interaction logic for AddJobTypeView.xaml
+    /// Interaction logic for AddExpenseTypeView.xaml
     /// </summary>
-    public partial class AddJobTypeView : UserControl
+    public partial class AddExpenseTypeView : UserControl
     {
-        public AddJobTypeView()
+        public AddExpenseTypeView()
         {
             InitializeComponent();
         }

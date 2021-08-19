@@ -91,15 +91,9 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="EventAggregatorFillerClasses\NavigateToDashBoard.cs" />
-    <Compile Include="ViewModels\AddExpenseTypeView.xaml.cs">
-      <DependentUpon>AddExpenseTypeView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\AddExpenseTypeViewModel.cs" />
     <Compile Include="ViewModels\AddExpenseViewModel.cs" />
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
-    <Compile Include="ViewModels\AddJobTypeView.xaml.cs">
-      <DependentUpon>AddJobTypeView.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ViewModels\AddJobTypeViewModel.cs" />
     <Compile Include="ViewModels\AddMileageViewModel.cs" />
     <Compile Include="ViewModels\DashBoardViewModel.cs" />
@@ -108,11 +102,17 @@
     <Compile Include="ViewModels\ManageIncomeViewModel.cs" />
     <Compile Include="ViewModels\ManageJobTypesViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\AddExpenseTypeView.xaml.cs">
+      <DependentUpon>AddExpenseTypeView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddExpenseView.xaml.cs">
       <DependentUpon>AddExpenseView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AddIncomeView.xaml.cs">
       <DependentUpon>AddIncomeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AddJobTypeView.xaml.cs">
+      <DependentUpon>AddJobTypeView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\AddMileageView.xaml.cs">
       <DependentUpon>AddMileageView.xaml</DependentUpon>
@@ -167,11 +167,7 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="ViewModels\AddExpenseTypeView.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="ViewModels\AddJobTypeView.xaml">
+    <Page Include="Views\AddExpenseTypeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -180,6 +176,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\AddIncomeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AddJobTypeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
