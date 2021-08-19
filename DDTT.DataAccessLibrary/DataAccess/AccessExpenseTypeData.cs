@@ -32,7 +32,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSetData<ExpenseType, dynamic>("dbo.ExpenseType_GetAll", dbName, new { });
+                return cnn.LoadSetData<ExpenseType, dynamic>("dbo.spExpenseType_GetAll", dbName, new { });
             }
         }
         public void DeleteById(int id)

@@ -31,9 +31,13 @@ namespace DDTT_WPF_UI.ViewModels
         public void LoadData()
         {
             JobTypeList = _getAllJobTypes.GetAll();
+            ExpenseTypeList = _getAllExpenseType.GetAll();
         }
         public JobType SelectedJobType { get; set; }
         public List<JobType> JobTypeList { get; set; }
+
+        public ExpenseType SelectedExpenseType { get; set; }
+        public List<ExpenseType> ExpenseTypeList { get; set; }
 
         public decimal Amount { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
@@ -42,7 +46,7 @@ namespace DDTT_WPF_UI.ViewModels
         {
             var expense = IoC.Get<Expenditure>();
             expense.JobTypeId = SelectedJobType.Id;
-            expense.JobType = SelectedJobType;
+            expense.ExpenseTypeId = SelectedExpenseType.Id;
             expense.Amount = Amount;
             expense.TimeStamp = TimeStamp;
             _insertExpenditure.Insert(expense);
