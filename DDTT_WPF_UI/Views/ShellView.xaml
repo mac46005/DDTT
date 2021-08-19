@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DDTT_WPF_UI.Views"
         mc:Ignorable="d"
-        Title="Driver Businness Tracker" Height="450" Width="800">
+        Title="Driver Businness Tracker" Height="450" Width="900">
     <DockPanel>
         <Menu DockPanel.Dock="Top" FontSize="18">
             <MenuItem Header="Add Data">
                 <MenuItem Header="Add Income" x:Name="AddIncome"/>
                 <MenuItem Header="Add Expense" x:Name="AddExpense"/>
                 <MenuItem Header="Add Mileage" x:Name="AddMileage"/>
+                <MenuItem Header="Add Expense Type" x:Name="AddExpenseType"/>
+                <MenuItem Header="Add Job Type" x:Name="AddJobType"/>
             </MenuItem>
             <MenuItem Header="Manage Data">
                 <MenuItem Header="Manage Income" x:Name="ManageIncome"/>
