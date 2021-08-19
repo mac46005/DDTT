@@ -18,7 +18,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<ExpenseType>("dbo.ExpenseType_Insert", dbName, expenseType);
+                cnn.SaveData<dynamic>("dbo.spExpenseType_Insert", dbName, new { CategoryName = expenseType.CategoryName });
             }
         }
         public ExpenseType GetById(int id)
