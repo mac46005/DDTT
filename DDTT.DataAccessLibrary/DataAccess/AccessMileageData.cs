@@ -17,7 +17,12 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<Mileage>("dbo.spMileage_Insert", dbName, mileage);
+                cnn.SaveData<dynamic>("dbo.spMileage_Insert", dbName, new 
+                {
+                    JobTypeId = mileage.JobTypeId,
+                    Amount = mileage.Amount,
+                    TimeStamp = mileage.TimeStamp
+                });
             }
         }
         public Mileage GetById(int id)

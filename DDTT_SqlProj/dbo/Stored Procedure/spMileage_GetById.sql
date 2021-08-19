@@ -3,7 +3,7 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT Id,Amount,TimeStamp
+	SELECT Id,JobTypeId,Amount,TimeStamp
 	FROM dbo.Mileages
 	WHERE Id = @Id;
 END

@@ -45,17 +45,19 @@
         <Label Content="Mileage:" 
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="3" Grid.Column="1"/>
-        <TextBox FontSize="30"
+        <TextBox x:Name="Amount" 
+                 FontSize="30"
                  Grid.Row="3" Grid.Column="2"/>
 
         <Label Content="Time Stamp:" 
                FontSize="30" HorizontalAlignment="Right"
                Grid.Row="4" Grid.Column="1"/>
-        <DatePicker
-            FontSize="30"
-            Grid.Row="4" Grid.Column="2"/>
+        <DatePicker x:Name="TimeStamp"
+                    FontSize="30"
+                    Grid.Row="4" Grid.Column="2"/>
 
         <Button Content="Submit"
+                x:Name="Submit"
                 FontSize="30"
                 Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"/>
 
