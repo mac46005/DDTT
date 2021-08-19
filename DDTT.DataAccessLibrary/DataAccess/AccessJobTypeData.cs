@@ -32,7 +32,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<JobType, dynamic>("dbo.JobType_GetById", dbName, new { Id = id });
+                return cnn.LoadSingleData<JobType, dynamic>("dbo.spJobType_GetById", dbName, new { Id = id });
             }
         }
 
@@ -40,7 +40,7 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<JobType>("dbo.JobType_Insert", dbName, obj);
+                cnn.SaveData<dynamic>("dbo.spJobType_Insert", dbName, new { Job = obj.Job });
             }
         }
     }
