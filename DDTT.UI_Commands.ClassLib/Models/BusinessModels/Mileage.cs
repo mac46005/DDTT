@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.ClassLib.Models.BusinessModels
 {
-    public class Mileage : IDD_DataModel
+    public class Mileage : ISqlItemId
     {
         public int Id { get; set; }
         public int JobTypeId { get; set; }

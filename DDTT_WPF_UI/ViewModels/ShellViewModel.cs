@@ -1,5 +1,6 @@
 ﻿using Caliburn.Micro;
 using DDTT.ClassLib.Models.BusinessModels;
+using DDTT.ClassLib.Models.Interfaces;
 using DDTT.DataAccessLibrary.DataAccess.Interfaces;
 using DDTT_WPF_UI.EventAggregatorFillerClasses;
 using System;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DDTT_WPF_UI.ViewModels
 {
-    internal class ShellViewModel : Conductor<object>, IHandle<NavigateToDashBoard>
+    internal class ShellViewModel : Conductor<object>, IHandle<NavigateToDashBoard>,IHandle<NavigateToEditItem>
     {
         IEventAggregator _eventAggregator;
         public ShellViewModel(IEventAggregator eventAggregator)
@@ -67,6 +68,31 @@ namespace DDTT_WPF_UI.ViewModels
         public void Handle(NavigateToDashBoard message)
         {
             ActivateItem(IoC.Get<DashBoardViewModel>());
+        }
+
+        public void Handle(NavigateToEditItem message)
+        {
+            ISqlItemId item = (ISqlItemId)message;
+            if (typeof(Income).Equals(item))
+            {
+
+            }
+            else if (typeof(Expenditure).Equals(item))
+            {
+
+            }
+            else if (typeof(Mileage).Equals(item))
+            {
+
+            }
+            else if (typeof(JobType).Equals(item))
+            {
+
+            }
+            else if (typeof(ExpenseType).Equals(item))
+            {
+
+            }
         }
     }
 }

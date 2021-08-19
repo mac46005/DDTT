@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DDTT.ClassLib.Models.Interfaces
 {
-    internal interface IDD_DataModel
+    public interface ISqlItemId
     {
         int Id { get; set; }
-        decimal Amount { get; set; }
-        DateTime TimeStamp { get; set; }
     }
 }

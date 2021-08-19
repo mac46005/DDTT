@@ -91,12 +91,14 @@
     </Compile>
     <Compile Include="Bootstrapper.cs" />
     <Compile Include="EventAggregatorFillerClasses\NavigateToDashBoard.cs" />
+    <Compile Include="EventAggregatorFillerClasses\NavigateToEditItem.cs" />
     <Compile Include="ViewModels\AddExpenseTypeViewModel.cs" />
     <Compile Include="ViewModels\AddExpenseViewModel.cs" />
     <Compile Include="ViewModels\AddIncomeViewModel.cs" />
     <Compile Include="ViewModels\AddJobTypeViewModel.cs" />
     <Compile Include="ViewModels\AddMileageViewModel.cs" />
     <Compile Include="ViewModels\DashBoardViewModel.cs" />
+    <Compile Include="ViewModels\IncomeItemViewModel.cs" />
     <Compile Include="ViewModels\ManageExpendituresViewModel.cs" />
     <Compile Include="ViewModels\ManageExpenseTypesViewModel.cs" />
     <Compile Include="ViewModels\ManageIncomeViewModel.cs" />

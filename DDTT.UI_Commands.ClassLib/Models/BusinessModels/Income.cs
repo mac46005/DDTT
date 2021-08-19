@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DDTT.ClassLib.Models.BusinessModels
 {
-    public class Income
+    public class Income : ISqlItemId
     {
         public int Id { get; set; }
         public int JobTypeId { get; set; }

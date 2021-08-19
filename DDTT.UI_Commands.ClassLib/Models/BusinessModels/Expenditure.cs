@@ -7,14 +7,11 @@ using System.Threading.Tasks;
 
 namespace DDTT.ClassLib.Models.BusinessModels
 {
-    public class Expenditure : IDD_DataModel
+    public class Expenditure : ISqlItemId
     {
         public int Id { get; set; }
         public int JobTypeId { get; set; }
         public JobType JobType { get; set; }
-        /// <summary>
-        /// Get and set the expense amount
-        /// </summary>
         public decimal Amount { get; set; }
         public DateTime TimeStamp { get; set; } = DateTime.Now;
         public int ExpenseTypeId { get; set; }

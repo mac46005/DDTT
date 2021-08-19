@@ -47,7 +47,7 @@
     <Compile Include="Models\BusinessModels\JobType.cs" />
     <Compile Include="Models\BusinessModels\Mileage.cs" />
     <Compile Include="Models\Interfaces\ICalculateTaxRate.cs" />
-    <Compile Include="Models\Interfaces\IDD_DataModel.cs" />
+    <Compile Include="Models\Interfaces\ISqlItemId.cs" />
     <Compile Include="Models\TaxModels\F1040_ES.cs" />
     <Compile Include="Models\TaxModels\FillingStatus.cs" />
     <Compile Include="Models\TaxModels\TaxRateScheduleHelper.cs" />
