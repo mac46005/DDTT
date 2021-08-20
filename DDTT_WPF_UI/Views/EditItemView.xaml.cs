@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DDTT_WPF_UI.ViewModels
+namespace DDTT_WPF_UI.Views
 {
     /// <summary>
-    /// Interaction logic for EditItemViewModel.xaml
+    /// Interaction logic for EditItemView.xaml
     /// </summary>
-    public partial class EditItemViewModel : UserControl
+    public partial class EditItemView : UserControl
     {
-        public EditItemViewModel()
+        public EditItemView()
         {
             InitializeComponent();
         }
