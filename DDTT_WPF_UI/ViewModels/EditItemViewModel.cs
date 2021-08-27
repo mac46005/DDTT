@@ -19,12 +19,5 @@ namespace DDTT_WPF_UI.ViewModels
         public Income IncomeType { get; set; }
         public Expenditure ExpenseType { get; set; }
         public Mileage MileageType { get; set; }
-        private LoadItemType()
-        {
-            if (typeof(Income).Equals(Item))
-            {
-
-            }else if
-        }
     }
 }

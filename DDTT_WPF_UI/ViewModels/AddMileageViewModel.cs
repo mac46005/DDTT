@@ -12,14 +12,18 @@ namespace DDTT_WPF_UI.ViewModels
 {
     internal class AddMileageViewModel : Screen
     {
+        public string Title { get; set; } = "Add";
+        public bool IsEditing { get; set; } 
         private IGetAll<JobType> _getAllJobTypes;
         private IInsert<Mileage> _insertMileage;
+        private IGetById<Mileage> _getByIdMileage;
         private IEventAggregator _eventAggregator;
         public AddMileageViewModel(IDataAccess<JobType> accessJobTypeData, IDataAccess<Mileage> accessMileageData,
             IEventAggregator eventAggregator)
         {
             _getAllJobTypes = accessJobTypeData;
             _insertMileage = accessMileageData;
+            _getByIdMileage = accessMileageData;
             _eventAggregator = eventAggregator;
 
             LoadData();
@@ -28,6 +32,8 @@ namespace DDTT_WPF_UI.ViewModels
         {
             JobTypeList = _getAllJobTypes.GetAll();
         }
+
+        public int Id { get; set; }
         public List<JobType> JobTypeList { get; set; } = new List<JobType>();
         public JobType SelectedJobType { get; set; }
 
@@ -45,7 +51,15 @@ namespace DDTT_WPF_UI.ViewModels
             _insertMileage.Insert(mileage);
             _eventAggregator.PublishOnUIThread(new NavigateToDashBoard());
         }
+        public void Modify(Mileage mileage)
+        {
+            Id = mileage.Id;
+            SelectedJobType = mileage.JobType;
+            Amount = mileage.Amount;
+            TimeStamp = mileage.TimeStamp;
 
+            //send edit to sql
+        }
 
     }
 }
