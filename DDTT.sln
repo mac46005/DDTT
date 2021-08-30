@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DDTT_WPF_UI", "DDTT_WPF_UI\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelfEmployedTaxEstimator.ClassLibrary", "SelfEmployedTaxEstimator.ClassLibrary\SelfEmployedTaxEstimator.ClassLibrary.csproj", "{4E269931-8775-4A4B-B5FC-2A492A7B992F}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SelfEmploymentTaxSettings_Db", "SelfEmploymentTaxSettings_Db\SelfEmploymentTaxSettings_Db.sqlproj", "{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,12 @@ Global
 		{4E269931-8775-4A4B-B5FC-2A492A7B992F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E269931-8775-4A4B-B5FC-2A492A7B992F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E269931-8775-4A4B-B5FC-2A492A7B992F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B40C609-3CE8-4F6C-AB71-8C845F4526AA}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

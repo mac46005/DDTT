@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[1040ES_Line8]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [MultiplyBy] NCHAR(10) NOT NULL
+)
