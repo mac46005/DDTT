@@ -68,5 +68,6 @@
     <Build Include="dbo\Tables\1040ES_Line3.sql" />
     <Build Include="dbo\Tables\1040ES_Line8.sql" />
     <Build Include="dbo\Tables\1040ES_Line10.sql" />
+    <Build Include="dbo\Tables\1040ES_Line5.sql" />
   </ItemGroup>
 </Project>

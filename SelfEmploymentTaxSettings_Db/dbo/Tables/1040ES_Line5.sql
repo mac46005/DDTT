@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[1040ES_Line5]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [SS_TaxMaxIncome] MONEY NOT NULL
+)

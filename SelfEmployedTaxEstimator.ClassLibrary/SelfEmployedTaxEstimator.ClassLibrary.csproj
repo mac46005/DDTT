@@ -41,12 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessModels\Interfaces\IDbAccess.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IEditById.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IGetAll.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IGetById.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IInsert.cs" />
     <Compile Include="Models\1040ES_SelfEmploymentTaxAndDeduction_WS.cs" />
     <Compile Include="Models\1040ES_WKPopulator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataAccessModels\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
