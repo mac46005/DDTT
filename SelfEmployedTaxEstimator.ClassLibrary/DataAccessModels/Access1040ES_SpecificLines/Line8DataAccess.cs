@@ -7,11 +7,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static DataAccess.ClassLib.DBNameHelper;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Access1040ES_SpecificLines
 {
     public class Line8DataAccess : IDataAccess<Line8>
     {
+        const string line8 = nameof(Line8);
         public void DeleteById(int id)
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
@@ -24,7 +26,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Access1040ES_Sp
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>("", "", new { });
+                cnn.SaveData<dynamic>(dbo_sp() + line8 + Pre_("Update"), "", new { });
             }
         }
 
@@ -40,7 +42,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Access1040ES_Sp
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<Line8, dynamic>("", "", new { });
+                return cnn.LoadSingleData<Line8, dynamic>(dbo_sp() + line8 + Pre_("Get"), "", new { });
             }
         }
 
