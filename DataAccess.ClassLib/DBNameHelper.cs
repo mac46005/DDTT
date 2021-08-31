@@ -8,6 +8,7 @@ namespace DataAccess.ClassLib
 {
     public static class DBNameHelper
     {
-        public static string StoredProcedure() => "dbo.sp";
+        public static string dbo_sp() => "dbo.sp";
+        public static string Pre_(string value) => "_" + value;
     }
 }
