@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Interfaces
 {
-    internal interface IGetAll<T>
+    public interface IGetAll<T>
     {
         List<T> GetAll();
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Interfaces
 {
-    internal interface IEditById<T>
+    public interface IEditById<T>
     {
         void EditById(T obj);
     }

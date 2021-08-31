@@ -41,7 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccessModels\Interfaces\IDbAccess.cs" />
+    <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line10DataAccess.cs" />
+    <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line2DataAccess.cs" />
+    <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line3DataAccess.cs" />
+    <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line5DataAccess.cs" />
+    <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line8DataAccess.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IDataAccess.cs" />
+    <Compile Include="DataAccessModels\Interfaces\IDeleteById.cs" />
     <Compile Include="DataAccessModels\Interfaces\IEditById.cs" />
     <Compile Include="DataAccessModels\Interfaces\IGetAll.cs" />
     <Compile Include="DataAccessModels\Interfaces\IGetById.cs" />
