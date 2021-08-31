@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessModels\1040ES_LinesDataAccess\Line10DataAccess.cs" />
     <Compile Include="DataAccessModels\Interfaces\IDbAccess.cs" />
     <Compile Include="DataAccessModels\Interfaces\IEditById.cs" />
     <Compile Include="DataAccessModels\Interfaces\IGetAll.cs" />
@@ -50,6 +51,11 @@
     <Compile Include="Models\1040ES_WKPopulator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess.ClassLib\DataAccess.ClassLib.csproj">
+      <Project>{d176745a-db48-4e89-a3aa-78759e69f410}</Project>
+      <Name>DataAccess.ClassLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

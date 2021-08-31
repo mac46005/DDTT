@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="a51add70-4a22-4f81-80ae-6cf3fd801fd9" ChangeDateTime="08/31/2021 17:50:44">
+    <Property Name="ElementName" Value="[dbo].[1040ES_Line2].[MultiplyByRate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[1040ES_Line2]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="MultiplyBy" />
+  </Operation>
+</Operations>
