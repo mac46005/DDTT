@@ -10,6 +10,6 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models._1040ES_Lines
     public class Line5
     {
         public int Id { get; set; }
-        public decimal SS_TaxMaximumIncome { get; set; }
+        public decimal SS_TaxMaxIncome { get; set; }
     }
 }
