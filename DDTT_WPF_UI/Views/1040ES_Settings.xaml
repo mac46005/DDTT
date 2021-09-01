@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="DDTT_WPF_UI.Views._1040ES_Settings"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DDTT_WPF_UI.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="White">
+    <StackPanel HorizontalAlignment="Center">
+        <TextBlock Text="1040ES Settings"/>
+        <TextBlock Text="Line 2"/>
+        <TextBlock Text="Line 3"/>
+        <TextBlock Text="Value that multiplies line 2 by current year value."/>
+        <TextBlock Text="Line 5"/>
+        <TextBlock Text="Value represents Social Security Tax maximum income"/>
+        <TextBlock Text="Line 9"/>
+        <TextBlock Text="Value multiplies line 8 by current year value."/>
+        <TextBlock Text="Line 11"/>
+        <TextBlock Text="Multiply line 10 by current year value. This is our expected deduction for self-employment
+                    tax on Schedule 1 (Form 1040), line 14. Subtract this amount when figuring your expe"
+        
+    </StackPanel>
+</UserControl>

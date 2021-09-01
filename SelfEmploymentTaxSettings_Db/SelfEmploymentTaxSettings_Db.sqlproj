@@ -64,7 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\PaymentDueDates.sql" />
-    <Build Include="dbo\Tables\1040ES_Line2.sql" />
+    <Build Include="dbo\Tables\1040ES_Line4.sql" />
     <Build Include="dbo\Tables\1040ES_Line3.sql" />
     <Build Include="dbo\Tables\1040ES_Line8.sql" />
     <Build Include="dbo\Tables\1040ES_Line10.sql" />
@@ -77,8 +77,8 @@
     <Build Include="dbo\Stored Procedures\Line5_Update.sql" />
     <Build Include="dbo\Stored Procedures\Line3_Get.sql" />
     <Build Include="dbo\Stored Procedures\Line3_Update.sql" />
-    <Build Include="dbo\Stored Procedures\Line2_Get.sql" />
-    <Build Include="dbo\Stored Procedures\Line2_Update.sql" />
+    <Build Include="dbo\Stored Procedures\Line4_Get.sql" />
+    <Build Include="dbo\Stored Procedures\Line4_Update.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="SelfEmploymentTaxSettings_Db.refactorlog" />

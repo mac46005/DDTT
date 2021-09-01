@@ -105,6 +105,9 @@
     <Compile Include="ViewModels\ManageIncomeViewModel.cs" />
     <Compile Include="ViewModels\ManageJobTypesViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\1040ES_Settings.xaml.cs">
+      <DependentUpon>1040ES_Settings.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\AddExpenseTypeView.xaml.cs">
       <DependentUpon>AddExpenseTypeView.xaml</DependentUpon>
     </Compile>
@@ -173,6 +176,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <Page Include="Views\1040ES_Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\AddExpenseTypeView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

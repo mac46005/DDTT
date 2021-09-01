@@ -3,7 +3,7 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	UPDATE dbo.[1040ES_Line2]
+	UPDATE dbo.[1040ES_Line4]
 	SET MultiplyBy = @MultiplyBy
 	WHERE Id = 0;
 END

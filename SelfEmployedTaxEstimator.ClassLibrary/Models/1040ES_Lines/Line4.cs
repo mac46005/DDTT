@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.Models._1040ES_Lines
 {
-    public class Line2 : IMultiplyByData
+    public class Line4 : IMultiplyByData
     {
         public int Id { get; set; }
         public decimal MultiplyBy { get; set; }
