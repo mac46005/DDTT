@@ -1,9 +1,9 @@
-﻿CREATE PROCEDURE [dbo].[Line8_Update]
+﻿CREATE PROCEDURE [dbo].[Line9_Update]
 	@MultiplyBy MONEY
 AS
 BEGIN
 	SET NOCOUNT ON;
-	UPDATE dbo.[1040ES_Line8]
+	UPDATE dbo.[1040ES_Line9]
 	SET MultiplyBy = @MultiplyBy
 	WHERE Id = 0;
 END

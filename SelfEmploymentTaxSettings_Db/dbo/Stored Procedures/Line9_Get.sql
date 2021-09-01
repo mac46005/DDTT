@@ -1,8 +1,8 @@
-﻿CREATE PROCEDURE [dbo].[Line8_Get]
+﻿CREATE PROCEDURE [dbo].[Line9_Get]
 AS
 BEGIN
 	SET NOCOUNT ON;
 	SELECT Id, MultiplyBy
-	FROM dbo.[1040ES_Line8]
+	FROM dbo.[1040ES_Line9]
 	WHERE Id = 0;
 END

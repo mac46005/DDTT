@@ -11,9 +11,9 @@ using static DataAccess.ClassLib.DBNameHelper;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Access1040ES_SpecificLines
 {
-    class Line2DataAccess : IDataAccess<Line4>
+    public class Line11DataAccess : IDataAccess<Line11>
     {
-        const string line2 = nameof(Line4);
+        const string line10 = nameof(Line11);
         public void DeleteById(int id)
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
@@ -22,31 +22,31 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Access1040ES_Sp
             }
         }
 
-        public void EditById(Line4 obj)
+        public void EditById(Line11 obj)
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
-                cnn.SaveData<dynamic>(dbo_sp() + line2 + Pre_("Update"), "", new { });
+                cnn.SaveData<dynamic>(dbo_sp() + line10 + Pre_("Update"), "", new { MultiplyBy = obj.MultiplyBy });
             }
         }
 
-        public List<Line4> GetAll()
+        public List<Line11> GetAll()
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSetData<Line4, dynamic>("", "", new { });
+                return cnn.LoadSetData<Line11, dynamic>("", "", new { });
             }
         }
 
-        public Line4 GetById(int id)
+        public Line11 GetById(int id)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
-                return cnn.LoadSingleData<Line4, dynamic>(dbo_sp() + line2 + Pre_("Get"), "", new { });
+                return cnn.LoadSingleData<Line11,dynamic>(dbo_sp() + line10 + Pre_("Get"), "", new { });
             }
         }
 
-        public void Insert(Line4 obj)
+        public void Insert(Line11 obj)
         {
             using (ISaveSingleData cnn = new SqlDataAccess())
             {
