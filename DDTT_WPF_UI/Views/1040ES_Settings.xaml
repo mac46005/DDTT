@@ -7,18 +7,48 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="White">
+    <UserControl.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="0 0 0 10"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Header3">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Header1">
+            <Setter Property="FontSize" Value="30"/>
+        </Style>
+    </UserControl.Resources>
     <StackPanel HorizontalAlignment="Center">
-        <TextBlock Text="1040ES Settings"/>
-        <TextBlock Text="Line 2"/>
-        <TextBlock Text="Line 3"/>
-        <TextBlock Text="Value that multiplies line 2 by current year value."/>
-        <TextBlock Text="Line 5"/>
-        <TextBlock Text="Value represents Social Security Tax maximum income"/>
-        <TextBlock Text="Line 9"/>
-        <TextBlock Text="Value multiplies line 8 by current year value."/>
-        <TextBlock Text="Line 11"/>
-        <TextBlock Text="Multiply line 10 by current year value. This is our expected deduction for self-employment
-                    tax on Schedule 1 (Form 1040), line 14. Subtract this amount when figuring your expe"
         
+        <TextBlock Text="1040ES Settings"
+                   FontSize="30"/>
+        
+        <TextBlock Text="Line 3"
+                   Style="{StaticResource Header3}"/>
+        <TextBlock Text="Multiply line 2 by current year percentage."/>
+        <TextBox x:Name="Line3Value"/>
+        
+        <TextBlock Text="Line 4"
+                   Style="{StaticResource Header3}"/>
+        <TextBlock Text="Multiply line 3 by current year percentage."/>
+        <TextBox x:Name="Line4Value"/>
+        
+        <TextBlock Text="Line 5"
+                   Style="{StaticResource Header3}"/>
+        <TextBlock Text="Social security tax maximum income."/>
+        <TextBox x:Name="Line5Value"/>
+        
+        <TextBlock Text="Line 9"
+                   Style="{StaticResource Header3}"/>
+        <TextBlock Text="Mulitply line 8 by current year percentage."/>
+        <TextBox x:Name="Line9Value"/>
+        
+        <TextBlock Text="Line 11"
+                   Style="{StaticResource Header3}"/>
+        <TextBlock Text="Multiply line 10 current year percentage."/>
+        <TextBox x:Name="Line11Value"/>
+
+        <Button Content="Save Settings"/>
     </StackPanel>
 </UserControl>
