@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[1040ES_Config]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Line3] MONEY NOT NULL, 
+    [Line4] MONEY NOT NULL, 
+    [Line5] MONEY NOT NULL, 
+    [Line9] MONEY NOT NULL, 
+    [Line11] MONEY NOT NULL
+)

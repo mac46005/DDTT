@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessModels\1040ES_ConfigDataAccess.cs" />
     <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line11DataAccess.cs" />
     <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line4DataAccess.cs" />
     <Compile Include="DataAccessModels\Access1040ES_SpecificLines\Line3DataAccess.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="DataAccessModels\Interfaces\IGetAll.cs" />
     <Compile Include="DataAccessModels\Interfaces\IGetById.cs" />
     <Compile Include="DataAccessModels\Interfaces\IInsert.cs" />
+    <Compile Include="Models\1040ES_Config.cs" />
     <Compile Include="Models\1040ES_Lines\Line11.cs" />
     <Compile Include="Models\1040ES_Lines\Line4.cs" />
     <Compile Include="Models\1040ES_Lines\Line3.cs" />
@@ -67,6 +69,9 @@
       <Project>{d176745a-db48-4e89-a3aa-78759e69f410}</Project>
       <Name>DataAccess.ClassLib</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

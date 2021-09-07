@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Interfaces
 {
-    public interface IInsert<T>
+    public interface IInsert<T> : IDisposable
     {
         void Insert(T obj);
     }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels.Interfaces
 {
-    public interface IDeleteById
+    public interface IDeleteById : IDisposable
     {
         void DeleteById(int id);
     }

@@ -1,8 +1,0 @@
-﻿CREATE PROCEDURE [dbo].[Line11_Get]
-AS
-BEGIN
-	SET NOCOUNT ON;
-	SELECT Id,MultiplyBy
-	FROM dbo.[1040ES_Line11]
-	WHERE Id = 0;
-END

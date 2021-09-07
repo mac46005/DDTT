@@ -1,8 +1,0 @@
-﻿CREATE PROCEDURE [dbo].[Line5_Get]
-AS
-BEGIN
-	SET NOCOUNT ON;
-	SELECT Id,SS_TaxMaxIncome
-	FROM dbo.[1040ES_Line5]
-	WHERE Id = 0;
-END
