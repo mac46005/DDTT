@@ -11,12 +11,12 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models
     class _1040ES_WKPopulator
     {
         private _1040ES_SelfEmploymentTaxAndDeduction_WS MyWorkSheet { get; set; } = new _1040ES_SelfEmploymentTaxAndDeduction_WS();
-        private IGetById<_1040ES_ConfigDataAccess> getById = (IGetById<_1040ES_ConfigDataAccess>)new _1040ES_ConfigDataAccess();
+        private IGetById<_1040ES_Config> _1040Config = new _1040ES_ConfigDataAccess();
         public _1040ES_WKPopulator()
         {
-            using (IGetById<_1040ES_ConfigDataAccess> cnn = new _1040ES_ConfigDataAccess())
+            using (IGetById<_1040ES_Config> getById = new _1040ES_ConfigDataAccess())
             {
-
+                _1040Config = getById;
             }
         }
         private void SubtractL1bFromLa()

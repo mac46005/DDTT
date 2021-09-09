@@ -61,6 +61,7 @@
     <Compile Include="Models\1040ES_Lines\Line9.cs" />
     <Compile Include="Models\1040ES_SelfEmploymentTaxAndDeduction_WS.cs" />
     <Compile Include="Models\1040ES_WKPopulator.cs" />
+    <Compile Include="Models\EstimatedTaxWorkSheet.cs" />
     <Compile Include="Models\Interfaces\IMultiplyByData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -12,7 +12,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels
 {
     public class _1040ES_ConfigDataAccess : IInsert<_1040ES_Config>, IGetById<_1040ES_Config>, IGetAll<_1040ES_Config>, IDeleteById, IEditById<_1040ES_Config>
     {
-        public void DeleteById(int id)
+        public void DeleteById(int id = 0)
         {
             throw new NotImplementedException();
         }
@@ -35,7 +35,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels
             throw new NotImplementedException();
         }
 
-        public _1040ES_Config GetById(int id)
+        public _1040ES_Config GetById(int id = 0)
         {
             using (ILoadSingleData cnn = new SqlDataAccess())
             {
