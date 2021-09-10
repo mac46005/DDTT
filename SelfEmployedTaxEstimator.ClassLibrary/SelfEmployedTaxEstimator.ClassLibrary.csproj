@@ -50,6 +50,7 @@
     <Compile Include="DataAccessModels\Interfaces\IInsert.cs" />
     <Compile Include="Models\EstimatedTaxes\EstimatedTaxWK_Config.cs" />
     <Compile Include="Models\Interfaces\ITaxRateSchedule.cs" />
+    <Compile Include="Models\MyCurrentStatus.cs" />
     <Compile Include="Models\TaxRateSchedule\FilingStatus.cs" />
     <Compile Include="Models\SelfEmploymentTaxAndDeductions\SelfEmploymentTaxAndDeductionWK_Config.cs" />
     <Compile Include="Models\SelfEmploymentTaxAndDeductions\SelfEmploymentTaxAndDeductionWK.cs" />

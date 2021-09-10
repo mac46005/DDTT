@@ -10,7 +10,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeduc
     {
         public int Id { get; set; }
 
-        public DateTime Year { get; set; }
+        public DateTime Date { get; set; }
         /// <summary>
         /// Enter your expeced income 
         /// and profits subject to self-employment tax

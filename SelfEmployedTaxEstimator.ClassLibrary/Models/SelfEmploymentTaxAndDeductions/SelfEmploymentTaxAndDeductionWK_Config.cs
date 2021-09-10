@@ -8,6 +8,8 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeduc
 {
     public class SelfEmploymentTaxAndDeductionWK_Config
     {
+        public int Id { get; set; }
+        public DateTime Year { get; set; }
         public decimal Line3 { get; set; }
         public decimal Line4 { get; set; }
         public decimal Line5 { get; set; }
