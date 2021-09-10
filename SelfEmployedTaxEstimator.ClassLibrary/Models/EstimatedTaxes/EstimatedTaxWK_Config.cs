@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfEmployedTaxEstimator.ClassLibrary.Models
+namespace SelfEmployedTaxEstimator.ClassLibrary.Models.EstimatedTaxes
 {
     public class EstimatedTaxWK_Config
     {

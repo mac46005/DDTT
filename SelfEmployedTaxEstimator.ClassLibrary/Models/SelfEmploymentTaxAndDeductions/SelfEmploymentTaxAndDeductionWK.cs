@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfEmployedTaxEstimator.ClassLibrary.Models
+namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeductions
 {
-    public class _1040ES_SelfEmploymentTaxAndDeduction_WS
+    public class SelfEmploymentTaxAndDeductionWK
     {
         public int Id { get; set; }
 

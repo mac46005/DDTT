@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfEmployedTaxEstimator.ClassLibrary.Models
+namespace SelfEmployedTaxEstimator.ClassLibrary.Models.EstimatedTaxes
 {
     public class EstimatedTaxWorkSheet
     {
@@ -109,7 +109,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models
         /// </summary>
         public decimal Line12c { get; set; }
         /////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        
+
 
         /// <summary>
         /// Income tax withheld and estimated to be withheld during CURRENT YEAR (including income tax withholding

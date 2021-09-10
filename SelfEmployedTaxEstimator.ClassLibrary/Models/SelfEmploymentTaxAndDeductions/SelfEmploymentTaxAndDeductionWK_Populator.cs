@@ -6,15 +6,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfEmployedTaxEstimator.ClassLibrary.Models
+namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeductions
 {
-    class _1040ES_WKPopulator
+    class SelfEmploymentTaxAndDeductionWK_Populator
     {
-        private _1040ES_SelfEmploymentTaxAndDeduction_WS MyWorkSheet { get; set; } = new _1040ES_SelfEmploymentTaxAndDeduction_WS();
-        private IGetById<_1040ES_Config> _1040Config = new _1040ES_ConfigDataAccess();
-        public _1040ES_WKPopulator()
+        private SelfEmploymentTaxAndDeductionWK MyWorkSheet { get; set; } = new SelfEmploymentTaxAndDeductionWK();
+        private IGetById<SelfEmploymentTaxAndDeductionWK_Config> _1040Config = new SelfEmploymentTaxAndDeductionsWK_ConfigDataAccess();
+        public SelfEmploymentTaxAndDeductionWK_Populator()
         {
-            using (IGetById<_1040ES_Config> getById = new _1040ES_ConfigDataAccess())
+            using (IGetById<SelfEmploymentTaxAndDeductionWK_Config> getById = new SelfEmploymentTaxAndDeductionsWK_ConfigDataAccess())
             {
                 _1040Config = getById;
             }
@@ -51,7 +51,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models
         {
 
         }
-        public _1040ES_SelfEmploymentTaxAndDeduction_WS Populate()
+        public SelfEmploymentTaxAndDeductionWK Populate()
         {
             return MyWorkSheet;
         }

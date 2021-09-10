@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SelfEmployedTaxEstimator.ClassLibrary.Models
+namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeductions
 {
-    public class _1040ES_Config
+    public class SelfEmploymentTaxAndDeductionWK_Config
     {
         public decimal Line3 { get; set; }
         public decimal Line4 { get; set; }
