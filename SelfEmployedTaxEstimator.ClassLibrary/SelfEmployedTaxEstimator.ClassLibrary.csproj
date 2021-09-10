@@ -49,6 +49,7 @@
     <Compile Include="DataAccessModels\Interfaces\IGetById.cs" />
     <Compile Include="DataAccessModels\Interfaces\IInsert.cs" />
     <Compile Include="Models\EstimatedTaxes\EstimatedTaxWK_Config.cs" />
+    <Compile Include="Models\EstimatedTaxes\EstimatedTaxWorkSheet_Populator.cs" />
     <Compile Include="Models\IncomeEstimator\EstimatedYearlyIncome.cs" />
     <Compile Include="Models\Interfaces\ITaxRateSchedule.cs" />
     <Compile Include="Models\MyCurrentStatus.cs" />
