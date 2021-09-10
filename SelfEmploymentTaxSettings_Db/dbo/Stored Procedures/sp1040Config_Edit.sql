@@ -1,6 +1,0 @@
-﻿CREATE PROCEDURE [dbo].[sp1040Config_Edit]
-	@Line
-AS
-BEGIN
-	SET NOCOUNT ON;
-END

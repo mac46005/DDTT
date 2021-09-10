@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataAccessModels\Interfaces\IGetByDate.cs" />
     <Compile Include="DataAccessModels\SelfEmploymentTaxAndDeductionWK_ConfigDataAccess.cs" />
     <Compile Include="DataAccessModels\Interfaces\IDataAccess.cs" />
     <Compile Include="DataAccessModels\Interfaces\IDeleteById.cs" />

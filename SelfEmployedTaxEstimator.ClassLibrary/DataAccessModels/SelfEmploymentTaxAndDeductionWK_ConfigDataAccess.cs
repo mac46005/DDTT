@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels
 {
-    public class SelfEmploymentTaxAndDeductionsWK_ConfigDataAccess : IInsert<SelfEmploymentTaxAndDeductionWK_Config>, IGetById<SelfEmploymentTaxAndDeductionWK_Config>, IGetAll<SelfEmploymentTaxAndDeductionWK_Config>, IDeleteById, IEditById<SelfEmploymentTaxAndDeductionWK_Config>
+    public class SelfEmploymentTaxAndDeductionsWK_ConfigDataAccess : IInsert<SelfEmploymentTaxAndDeductionWK_Config>, IGetById<SelfEmploymentTaxAndDeductionWK_Config>, IGetAll<SelfEmploymentTaxAndDeductionWK_Config>, IDeleteById, IEditById<SelfEmploymentTaxAndDeductionWK_Config>,IGetByDate<SelfEmploymentTaxAndDeductionWK_Config>
     {
         public void DeleteById(int id = 0)
         {
@@ -33,6 +33,14 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.DataAccessModels
         public List<SelfEmploymentTaxAndDeductionWK_Config> GetAll()
         {
             throw new NotImplementedException();
+        }
+
+        public SelfEmploymentTaxAndDeductionWK_Config GetByDate(DateTime date)
+        {
+            using (ILoadSingleData cnn = new SqlDataAccess())
+            {
+                return cnn.LoadSingleData<SelfEmploymentTaxAndDeductionWK_Config, dynamic>("", "", new { Year = date });
+            }
         }
 
         public SelfEmploymentTaxAndDeductionWK_Config GetById(int id = 0)
