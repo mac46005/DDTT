@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[EstimatedTaxWK_Config]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Year] DATETIME2 NOT NULL, 
+    [Line12a] MONEY NOT NULL
+)

@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[EstimatedTaxWorkSheet]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Date] DATETIME2 NOT NULL, 
+    [Line1] MONEY NOT NULL, 
+    [Line2a] MONEY NOT NULL, 
+    [Line2b] MONEY NOT NULL, 
+    [Line3] MONEY NOT NULL, 
+    [Line4] MONEY NOT NULL, 
+    [Line5] MONEY NOT NULL, 
+    [Line6] MONEY NOT NULL, 
+    [Line7] MONEY NOT NULL, 
+    [Line8] MONEY NOT NULL, 
+    [Line9] MONEY NOT NULL, 
+    [Line10] MONEY NOT NULL, 
+    [Line11a] MONEY NOT NULL, 
+    [Line11b] MONEY NOT NULL, 
+    [Line11c] MONEY NOT NULL, 
+    [Line12a] MONEY NOT NULL, 
+    [Line12b] MONEY NOT NULL, 
+    [Line12c] MONEY NOT NULL, 
+    [Line13] MONEY NOT NULL, 
+    [Line14a] MONEY NOT NULL, 
+    [Line14b] MONEY NOT NULL, 
+    [Line15] MONEY NOT NULL
+)
