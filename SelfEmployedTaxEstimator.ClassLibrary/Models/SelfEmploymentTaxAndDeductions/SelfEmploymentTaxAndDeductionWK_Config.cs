@@ -12,7 +12,7 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeduc
         public DateTime Year { get; set; }
         public decimal Line3 { get; set; }
         public decimal Line4 { get; set; }
-        public decimal Line5 { get; set; }
+        public decimal Line5 { get; set; } 
         public decimal Line9 { get; set; }
         public decimal Line11 { get; set; }
     }
