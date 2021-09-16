@@ -11,7 +11,7 @@ using static DDTT.DataAccessLibrary.DB_Helper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class AccessIncomeData : IDataAccess<Income>
+    public class AccessIncomeData : IDataAccess<Income>, IGetByYear<Income>
     {
         public void DeleteById(int id)
         {
@@ -20,6 +20,11 @@ namespace DDTT.DataAccessLibrary.DataAccess
                 
                 cnn.SaveData<dynamic>("dbo.spIncome_DeleteById", dbName, new { Id = id });
             }
+        }
+
+        public void Dispose()
+        {
+            throw new NotImplementedException();
         }
 
         public List<Income> GetAll()
@@ -36,6 +41,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
             {
                 return cnn.LoadSingleData<Income, dynamic>("dbo.spIncome_Get",dbName,new { Id = id });
             }
+        }
+
+        public List<Income> GetByYear(int year)
+        {
+            DateTime chosenDate = DateTime.Now;
+            var thisYear = chosenDate.Year;
+            throw new NotImplementedException();
         }
 
         public void Insert(Income obj)

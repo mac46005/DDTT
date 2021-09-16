@@ -22,8 +22,10 @@ namespace SelfEmployedTaxEstimator.ClassLibrary.Models.SelfEmploymentTaxAndDeduc
             }
         }
 
-        private void SubtractLine1b_Line1a() => _setd.Line3 = _setd.Line1b - _setd.Line1a;
+        private void SubtractLine1b_Line1a() 
+            => _setd.Line3 = _setd.Line1b - _setd.Line1a;
 
+        private void 
 
 
     }
