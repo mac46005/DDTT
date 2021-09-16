@@ -3,7 +3,7 @@
 AS
 BEGIN
 	SET NOCOUNT ON;
-	SELECT SUM()
+	SELECT SUM((BasePay + Tip)) AS TotalYearly
 	FROM dbo.Incomes
 	WHERE YEAR(TimeStamp) = @Year
 END
