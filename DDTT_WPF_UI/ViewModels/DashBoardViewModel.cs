@@ -16,6 +16,10 @@ namespace DDTT_WPF_UI.ViewModels
         }
         private void LoadData()
         {
-        }
+
+        } 
+        public string ThisWeek { get; set; }
+        public string ThisMonth { get; set; }
+        public string ThisYear { get; set; }
     }
 }
