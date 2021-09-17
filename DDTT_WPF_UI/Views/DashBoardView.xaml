@@ -17,12 +17,24 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="100"/>
-            <RowDefinition Height="50"/>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
         <Label FontSize="70" HorizontalAlignment="Center" 
                Grid.ColumnSpan="3" Grid.Row="0" Content="DashBoard"/>
-        
+        <TextBlock Text="This Week:"/>
+        <TextBlock Text="{Binding ThisWeek}"
+                   Grid.Row="1" Grid.Column="0"/>
+        <TextBlock Text="This Month:"/>
+        <TextBlock Text="{Binding ThisMonth}"
+                   Grid.Row="1" Grid.Column="1"/>
+        <TextBlock Text="This Year"
+                   Grid.Row="2" Grid.Column="0"/>
+        <TextBlock Text="{Binding ThisYear}"
+                   Grid.Row="2" Grid.Column="1"/>
+
         <ListViewItem Grid.ColumnSpan="3" Grid.Column="0" Grid.Row="2">
             <DataTemplate>
 
