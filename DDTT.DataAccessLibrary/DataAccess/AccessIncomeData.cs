@@ -11,7 +11,7 @@ using static DDTT.DataAccessLibrary.DB_Helper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
-    public class AccessIncomeData : IDataAccess<Income>, IGetByYear<Income>
+    public class AccessIncomeData : IDataAccess<Income>, IThisYear,IThisMonth,IThisWeek
     {
         public void DeleteById(int id)
         {
@@ -62,6 +62,21 @@ namespace DDTT.DataAccessLibrary.DataAccess
                     TimeStamp = obj.TimeStamp
                 });
             }
+        }
+
+        public decimal ThisMonth()
+        {
+
+        }
+
+        public decimal ThisWeek()
+        {
+
+        }
+
+        public decimal ThisYear()
+        {
+            throw new NotImplementedException();
         }
     }
 }
