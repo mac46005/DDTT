@@ -55,6 +55,9 @@
     <Compile Include="DataAccess\Interfaces\IGetByYear.cs" />
     <Compile Include="DataAccess\Interfaces\IInsert.cs" />
     <Compile Include="DataAccess\AccessIncomeData.cs" />
+    <Compile Include="DataAccess\Interfaces\IThisMonth.cs" />
+    <Compile Include="DataAccess\Interfaces\IThisWeek.cs" />
+    <Compile Include="DataAccess\Interfaces\IThisYear.cs" />
     <Compile Include="DB_Helper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
