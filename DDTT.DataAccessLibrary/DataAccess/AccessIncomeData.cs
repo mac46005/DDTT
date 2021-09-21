@@ -78,7 +78,14 @@ namespace DDTT.DataAccessLibrary.DataAccess
 
         public decimal ThisWeek()
         {
-
+            using (ILoadSetData cnn = new SqlDataAccess())
+            {
+                decimal total = 0;
+                cnn.LoadSetData<decimal, dynamic>(dbo_sp() + nameof(Income) + Pre_(nameof(ThisWeek)), dbName, new { Today = DateTime.Now })
+                    .ToList()
+                    .ForEach(x => total += x);
+                return total;
+            }
         }
 
         public decimal ThisYear()
