@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using DataAccess.ClassLib.Interface.BasicDataAccess_Interfaces;
 using DataAccess.ClassLib.GenericDataAccess;
 using static DDTT.DataAccessLibrary.DB_Helper;
+using static DataAccess.ClassLib.DBNameHelper;
 
 namespace DDTT.DataAccessLibrary.DataAccess
 {
@@ -66,7 +67,13 @@ namespace DDTT.DataAccessLibrary.DataAccess
 
         public decimal ThisMonth()
         {
-
+            using (ILoadSetData cnn = new SqlDataAccess())
+            {
+                decimal total = 0;
+                cnn.LoadSetData<decimal, dynamic>(dbo_sp() + nameof(Income) + Pre_("ThisMonth"), dbName, new { Today = DateTime.Now })
+                    .ToList().ForEach(x => total += x);
+                return total;
+            }
         }
 
         public decimal ThisWeek()
