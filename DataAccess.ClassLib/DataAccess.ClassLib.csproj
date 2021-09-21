@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataString.cs" />
+    <Compile Include="DBFunctionCall.cs" />
     <Compile Include="DBNameHelper.cs" />
     <Compile Include="GenericDataAccess\SqlDataAccess.cs" />
     <Compile Include="Interface\BasicDataAccess_Interfaces\ILoadSetData.cs" />

@@ -90,7 +90,14 @@ namespace DDTT.DataAccessLibrary.DataAccess
 
         public decimal ThisYear()
         {
-            throw new NotImplementedException();
+            using (ILoadSetData cnn = new SqlDataAccess())
+            {
+                decimal total = 0;
+                cnn.LoadSetData<decimal, dynamic>(dbo_sp() + nameof(Income) + Pre_(nameof(ThisYear)), dbName, new { Today = DateTime.Now })
+                    .ToList()
+                    .ForEach(x => total += x);
+                return total;
+            }
         }
     }
 }
