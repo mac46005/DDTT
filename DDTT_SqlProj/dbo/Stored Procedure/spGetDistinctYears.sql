@@ -1,5 +1,5 @@
 ﻿CREATE PROCEDURE [dbo].[spGetDistinctYears]
 AS
 BEGIN
-	SELECT DIS
+	SET NOCOUNT ON;
 END
