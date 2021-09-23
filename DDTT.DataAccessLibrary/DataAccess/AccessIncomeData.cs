@@ -80,6 +80,8 @@ namespace DDTT.DataAccessLibrary.DataAccess
         {
             using (ILoadSetData cnn = new SqlDataAccess())
             {
+                var today = DateTime.Now;
+                var monday = today.AddDays((today.Day/7)*100);
                 decimal total = 0;
                 cnn.LoadSetData<decimal, dynamic>(dbo_sp() + nameof(Income) + Pre_(nameof(ThisWeek)), dbName, new { Today = DateTime.Now })
                     .ToList()
